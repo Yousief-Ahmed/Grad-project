@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>All courses</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../../vendors/feather/feather.css" />
+    <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css" />
+    <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css" />
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link
+      rel="stylesheet"
+      href="../../vendors/datatables.net-bs4/dataTables.bootstrap4.css"
+    />
+   
+    <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../js/select.dataTables.min.css"
+    />
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="../../css/vertical-layout-light/style.css" />
+    <!-- endinject -->
+    <link rel="shortcut icon" href="D:\Graduation_Project\images\logo.jpg" />
+    <script src="https://kit.fontawesome.com/8604f86d81.js" crossorigin="anonymous"></script>
+  </head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo mr-5 pl-5" href="D:\Graduation_Project\index.html">Academic quality</a>
+        <a class="navbar-brand brand-logo-mini" href="D:\Graduation_Project\index.html"><img src="D:\Graduation_Project\images\logo.jpg" class="mr-2" alt="logo"/></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item nav-search d-none d-lg-block">
+            <div class="input-group">
+              <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+                <span class="input-group-text" id="search">
+                  <i class="icon-search"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search">
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+              <i class="icon-bell mx-0"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+              <!-- <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-success">
+                    <i class="ti-info-alt mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Application Error</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Just now
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-warning">
+                    <i class="ti-settings mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Settings</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Private message
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-info">
+                    <i class="ti-user mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">New user registration</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    2 days ago
+                  </p>
+                </div>
+              </a> -->
+            </div>
+          </li>
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+              <img src="D:\Graduation_Project\images\icon_4.png" alt="profile"/>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item" href="settings.html">
+                <i class="ti-settings text-primary"></i>
+                Settings
+              </a>
+              <a class="dropdown-item" href="login.html">
+                <i class="ti-power-off text-primary"></i>
+                Logout
+              </a>
+            </div>
+          </li>
+         
+        </ul>
+        
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper">
+        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <p class="settings-heading">SIDEBAR SKINS</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border mr-3"></div>Light</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark</div>
+          <p class="settings-heading mt-2">HEADER SKINS</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default"></div>
+          </div>
+        </div>
+      </div>
+     
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+        
+          <li class="nav-item">
+            <a class="nav-link" href="D:\Graduation_Project\index.html">
+            <i class="fa-solid fa-house"></i>
+            <span class="menu-title pl-3 pt-1">Home</span>
+          </a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-toggle="collapse"
+              href="#Professors"
+              aria-expanded="false"
+              aria-controls="Professors"
+            >
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title pt-2">Professors</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="Professors">
+              <ul class="nav flex-column sub-menu">
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="D:\Graduation_Project\pages\Professors\prof.html">
+                    
+                    <span class="menu-title ">Abdelfattah</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <span class="text-light">Ali Rashed </span>
+                  </button>
+
+                  <div class="dropdown-menu" id="second-grade">
+                    <ul class="nav flex-column sub-menu">
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Subject1</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Subject2</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Subject3</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Subject4</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+               
+              </ul>
+            </div>
+          </li>
+          
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-toggle="collapse"
+              href="#courses"
+              aria-expanded="false"
+              aria-controls="courses"
+            >
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title pt-2">Courses</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="courses">
+              <ul class="nav flex-column sub-menu">
+                
+                <li class="nav-item">
+                  
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <span class="text-light ">First grade </span>
+                  </button>
+
+                  <div class="dropdown-menu" id="first-grade">
+                    <ul class="nav flex-column sub-menu">
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#"> Action</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item " href="#">Another action</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item " href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <span class="text-light">Second grade </span>
+                  </button>
+
+                  <div class="dropdown-menu" id="second-grade">
+                    <ul class="nav flex-column sub-menu">
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Action</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Another action</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <span class="text-light">Third grade </span>
+                  </button>
+
+                  <div class="dropdown-menu" id="third-grade">
+                    <ul class="nav flex-column sub-menu">
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Action</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Another action</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <span class="text-light">Fourth grade </span>
+                  </button>
+
+                  <div class="dropdown-menu " id="fourth-grade">
+                    <ul class="nav flex-column sub-menu">
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Action</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Another action</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link"  href="#resources" >
+              <i class="icon-layout menu-icon"></i>
+              <span class=" pt-2">Resources</span>
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-toggle="collapse"
+              href="#questionnaire"
+              aria-expanded="false"
+              aria-controls="questionnaire"
+            >
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title pt-2">Questionnaire</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="questionnaire">
+              <ul class="nav flex-column sub-menu">
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    
+                    <span class="menu-title ">Professors</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <span class="text-light">Students </span>
+                  </button>
+
+                  <div class="dropdown-menu" id="second-grade">
+                    <ul class="nav flex-column sub-menu">
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">First grade</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Second grade</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Third gade</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Fourth gade</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+               
+              </ul>
+            </div>
+          </li>
+        
+
+          <li class="nav-item">
+            <a class="nav-link" href="D:\Graduation_Project\pages\student\student.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title pt-2">Student</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="D:\Graduation_Project\pages\student_affaris\student_affairs.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title pt-2">Student Affairs</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="D:\Graduation_Project\pages\program\program.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title pt-2">Program reports</span>
+            </a>
+          </li>
+        
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <!-- Welcome Message -->
+          <div class="row">
+            <h3 class="font-weight-bold"></h3>
+          </div>
+           <!-- Welcome Message -->
+          
+         
+           <div class="main-panel">
+            <section class="bg-light py-5 py-xl-8">
+              <div class="container overflow-hidden">
+                <div class="gy-md-0">
+                  <div class="text-md-start">
+                    <div class="row">
+                      <div class="col-sm-6 mb-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">Software Eingineering</h5>
+                            <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing
+                              elit. Labore, dolore voluptatum! Sunt error dicta  quidem!</p>
+                            <a href="D:\Graduation_Project\pages\Professor\course\course.html" class="btn btn-primary">Details</a>
+                          </div>
+                        </div>
+                      </div>
+                   </div>
+                    <!-- <div class="row">
+                      <div class="col-sm-12 pb-3 col-md-6 col-lg-4">
+                        <div class="card">
+                          <img class="card-img-top" src="image/hero5.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">software engineering</h5>
+                            <p class="card-text">
+                              Lorem ipsum dolor, sit amet consectetur adipisicing
+                              elit. Labore, dolore voluptatum! Sunt error dicta
+                              quidem!
+                            </p>
+                            <a href="pages/course/course.html" class="btn btn-primary">details</a>
+                          </div>
+                        </div>
+                      </div>
+                    
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </section>
+  
+           
+            
+            <!-- partial -->
+          </div>
+         
+         
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer text-center">
+          <div>
+            <span class="text-muted  d-block ">Al Azhar University </span>
+            <span class=" d-block mt-1 mt-sm-0">Faculty of Engineering, Department of Systems and Computers</span>
+       
+          </div> 
+        </footer> 
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>   
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="../../vendors/chart.js/Chart.min.js"></script>
+  <script src="../../vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="../../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <script src="../../js/dataTables.select.min.js"></script>
+
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+  <script src="../../js/settings.js"></script>
+  <script src="../../js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="../../js/dashboard.js"></script>
+  <script src="../../js/Chart.roundedBarCharts.js"></script>
+  
+  <!-- End custom js for this page-->
+</body>
+
+</html>
+

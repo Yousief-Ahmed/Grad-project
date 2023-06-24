@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="../../jquery-3.7.0.js">
+    </script>  
+    <script src="../../jquery-3.7.0.min.js">
+    </script>  
+    <script src="../../css/multi-step.css"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<!-- google font -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>All courses</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../../vendors/feather/feather.css" />
+    <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css" />
+    <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css" />
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link
+      rel="stylesheet"
+      href="../../vendors/datatables.net-bs4/dataTables.bootstrap4.css"
+    />
+   
+    <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../js/select.dataTables.min.css"
+    />
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="../../css/vertical-layout-light/style.css" />
+    <!-- endinject -->
+    <link rel="shortcut icon" href="D:\Graduation_Project\images\logo.jpg" />
+    <script src="https://kit.fontawesome.com/8604f86d81.js" crossorigin="anonymous"></script>
+  </head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo mr-5 pl-5" href="D:\Graduation_Project\index.html">Academic quality</a>
+        <a class="navbar-brand brand-logo-mini" href="D:\Graduation_Project\index.html"><img src="D:\Graduation_Project\images\logo.jpg" class="mr-2" alt="logo"/></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item nav-search d-none d-lg-block">
+            <div class="input-group">
+              <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+                <span class="input-group-text" id="search">
+                  <i class="icon-search"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search">
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+              <i class="icon-bell mx-0"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+              <!-- <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-success">
+                    <i class="ti-info-alt mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Application Error</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Just now
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-warning">
+                    <i class="ti-settings mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Settings</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Private message
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-info">
+                    <i class="ti-user mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">New user registration</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    2 days ago
+                  </p>
+                </div>
+              </a> -->
+            </div>
+          </li>
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+              <img src="D:\Graduation_Project\images\icon_4.png" alt="profile"/>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item" href="settings.html">
+                <i class="ti-settings text-primary"></i>
+                Settings
+              </a>
+              <a class="dropdown-item" href="login.html">
+                <i class="ti-power-off text-primary"></i>
+                Logout
+              </a>
+            </div>
+          </li>
+         
+        </ul>
+        
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper">
+        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <p class="settings-heading">SIDEBAR SKINS</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border mr-3"></div>Light</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark</div>
+          <p class="settings-heading mt-2">HEADER SKINS</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default"></div>
+          </div>
+        </div>
+      </div>
+     
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+        
+          <li class="nav-item">
+            <a class="nav-link" href="D:\Graduation_Project\index.html">
+            <i class="fa-solid fa-house"></i>
+            <span class="menu-title pl-3 pt-1">Home</span>
+          </a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-toggle="collapse"
+              href="#Professors"
+              aria-expanded="false"
+              aria-controls="Professors"
+            >
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title pt-2">Professors</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="Professors">
+              <ul class="nav flex-column sub-menu">
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="D:\Graduation_Project\pages\Professors\prof.html">
+                    
+                    <span class="menu-title ">Abdelfattah</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <span class="text-light">Ali Rashed </span>
+                  </button>
+
+                  <div class="dropdown-menu" id="second-grade">
+                    <ul class="nav flex-column sub-menu">
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Subject1</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Subject2</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Subject3</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Subject4</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+               
+              </ul>
+            </div>
+          </li>
+          
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-toggle="collapse"
+              href="#courses"
+              aria-expanded="false"
+              aria-controls="courses"
+            >
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title pt-2">Courses</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="courses">
+              <ul class="nav flex-column sub-menu">
+                
+                <li class="nav-item">
+                  
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <span class="text-light ">First grade </span>
+                  </button>
+
+                  <div class="dropdown-menu" id="first-grade">
+                    <ul class="nav flex-column sub-menu">
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#"> Action</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item " href="#">Another action</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item " href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <span class="text-light">Second grade </span>
+                  </button>
+
+                  <div class="dropdown-menu" id="second-grade">
+                    <ul class="nav flex-column sub-menu">
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Action</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Another action</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <span class="text-light">Third grade </span>
+                  </button>
+
+                  <div class="dropdown-menu" id="third-grade">
+                    <ul class="nav flex-column sub-menu">
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Action</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Another action</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <span class="text-light">Fourth grade </span>
+                  </button>
+
+                  <div class="dropdown-menu " id="fourth-grade">
+                    <ul class="nav flex-column sub-menu">
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Action</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Another action</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link"  href="#resources" >
+              <i class="icon-layout menu-icon"></i>
+              <span class=" pt-2">Resources</span>
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-toggle="collapse"
+              href="#questionnaire"
+              aria-expanded="false"
+              aria-controls="questionnaire"
+            >
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title pt-2">Questionnaire</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="questionnaire">
+              <ul class="nav flex-column sub-menu">
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    
+                    <span class="menu-title ">Professors</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <span class="text-light">Students </span>
+                  </button>
+
+                  <div class="dropdown-menu" id="second-grade">
+                    <ul class="nav flex-column sub-menu">
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">First grade</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Second grade</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Third gade</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Fourth gade</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+               
+              </ul>
+            </div>
+          </li>
+        
+
+          <li class="nav-item">
+            <a class="nav-link" href="D:\Graduation_Project\pages\student\student.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title pt-2">Student</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="D:\Graduation_Project\pages\student_affaris\student_affairs.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title pt-2">Student Affairs</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="D:\Graduation_Project\pages\program\program.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title pt-2">Program reports</span>
+            </a>
+          </li>
+        
+        </ul>
+      </nav>
+
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <!-- Welcome Message -->
+          <!-- header -->
+          <section class="bg-light py-5 py-xl-5">
+            <header class="pl-5 pr-5 pt-0 pb-0">
+              <div class="d-flex justify-content-between">
+              <h5>Al-Azhar University</h5>
+              <h5>جـامعـــة الأزهــــر</h5>
+             </div>
+            </header>
+            <header class="pl-5 pr-5 pt-0 pb-0">
+                <div class="d-flex justify-content-between">
+                <h5>Faculty of Engineering (boys)</h5>
+                <h5>كليـــــة الهندســـــة (بنين)</h5>
+               </div>
+              </header>
+              <header class="pl-5 pr-5 pt-0 pb-0">
+                <div class="d-flex justify-content-between">
+                <h5>Systems and Computer Engineering</h5>
+                <h5>قسم هندسة النظم والحاسبات</h5>
+               </div>
+              </header>
+              <hr size="7" width="90%" color="black">
+            
+          </section>
+         
+           <div class="main-panel">
+              
+          <section>
+            <div>
+                <h2 
+                class="text-center  fs-4 ">
+                <input class="col-md-2  " type="number" class="form-control" id="program_year" value="" required>
+                نموذج توصيف برنامج دراسي عام 
+                    
+                </h2>
+                
+                 
+            </div>
+           
+            
+            <form id="program_specs" action="#!">
+                <!-- start step indicators -->
+                <div class="form-header d-flex mb-4">
+                    <span class="stepIndicator">معلومات اساسية</span>
+                    <span class="stepIndicator">معلومات متخصصة</span>
+                    <span class="stepIndicator">معلومات متخصصة</span>
+                    <span class="stepIndicator">معلومات متخصصة</span>
+                </div>
+                <!-- end step indicators -->
+            
+                <!-- step one -->
+                <!-- <div class="step">
+                    <h2 class="text-center mb-4">معلومات أساسية</h2>
+                    <div class="mb-3">
+                        <input type="text" placeholder="اسم البرنامج" oninput="this.className = ''" name="اسم-البرنامج">
+                    </div>
+                    <div >
+                    <h3 class="text-right">طبيعة البرنامج</h3>
+                    
+                    <label class="checkbox-inline"> 
+                     <input type="checkbox" id="inlineCheckbox1" value="option1"> احادي
+                   </label>
+                   
+                   <label class="checkbox-inline">
+                     <input type="checkbox" id="inlineCheckbox2" value="option2">ثنائي
+                   </label>
+                   
+                   <label class="checkbox-inline">
+                     <input type="checkbox" id="inlineCheckbox3" value="option3">مشترك
+                   </label>
+                  
+                    </div>
+                    
+                    <div class="mb-3">
+                        <input type="text" placeholder="الفسم المسئول عن البرنامج" oninput="this.className = ''" name="الفسم-المسئول-عن-البرنامج">
+                    </div>
+                    <div class="mb-3">
+                      <input type="date" placeholder="تاريخ اقرار البرنامج" oninput="this.className = ''" name="تاريخ-اقرار-البرنامج">
+                  </div>
+                  <div class="mb-3">
+                    <input type="text" placeholder="منسق البرنامج" oninput="this.className = ''" name="منسق-البرنامج">
+                </div>
+                <div class="mb-3">
+                  <input type="text" placeholder="منسق مساعد" oninput="this.className = ''" name="منسق-مساعد">
+                  <input type="button" id="btn1" value="Add" style="width: 80px; float: right;"/>
+                  <div id="wrap"></div>
+              </div>
+              
+              <div class="mb-3">
+                <input type="text" placeholder="المراجع الداخلي" oninput="this.className = ''" name="المراجع-الداخلي">
+            </div>
+            <div class="mb-3">
+              <input type="text" placeholder="المراجع الخارجي" oninput="this.className = ''" name="المراجع-الخارجي">
+          </div>
+          <div class="mb-3">
+            <input type="date" placeholder="تاريخ اعتماد البرنامج" oninput="this.className = ''" name="تاريخ-اعتماد-البرنامج">
+        </div>
+                </div>
+             -->
+                <!-- step two -->
+                <!-- <div class="step">
+                    <h2 class="text-center mb-4">الأهداف العامة من البرنامج</h2>
+                    <div class="mb-3">
+                      <input type="text" placeholder="1" oninput="this.className = ''" name="الأهداف-العامة-من-البرنامج">
+                      <input type="button" id="btn2" value="Add" style="width: 80px; float: right;height: 45px;"/>
+                      <div id="wrap2"></div>
+                     </div>
+                  </div> -->
+                  
+                 
+               
+            
+                <!-- step three -->
+                <div class="step">
+                    <h3 class="text-center mb-4">المعايير الأكاديمية للبرنامج</h3>
+                    <h4 class="text-right mb-4">بنهاية هذا البرنامج يكون الخريج قادرََا على</h4>
+
+                    <div class="mb-3">
+                      <h4 style="float: right;">المعرفة والفهم</h4>
+                      <input type="text" placeholder="1" oninput="this.className = ''" name="المعرفة-و-الفهم">
+                      <input type="button" id="btn3" value="Add" style="width: 80px; float: right;"/>
+                      <div id="wrap3"></div>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="mb-3">
+                    <h4 style="float: right;">القدرات الذهنية</h4>
+                    <input type="text" placeholder="1" oninput="this.className = ''" name="القدرات-الذهنية">
+                    <input type="button" id="btn4" value="Add" style="width: 80px; float: right;"/>
+                    <div id="wrap4"></div>
+                </div>
+                <br><br>
+                <div class="mb-3">
+                  <h4 style="float: right;">المهارات المهنية والعملية</h4>
+                  <input type="text" placeholder="1" oninput="this.className = ''" name="المهارات-المهنية-والعملية">
+                  <input type="button" id="btn5" value="Add" style="width: 80px; float: right;"/>
+                  <div id="wrap5"></div>
+              </div>
+              <br><br>
+
+                <div class="mb-3">
+                  <h4 style="float: right;">المهارات العامة</h4>
+                  <input type="text" placeholder="1" oninput="this.className = ''" name="المهارات-العامة">
+                  <input type="button" id="btn6" value="Add" style="width: 80px; float: right;"/>
+                  <div id="wrap6"></div>
+              </div>
+              <br><br>
+
+              <div class="mb-3">
+                  <h4 style="float: right;">المعايير الأكاديمية للبرنامج</h4>
+                  <input type="text" placeholder="1" oninput="this.className = ''" name="">
+                  <input type="button" id="btn7" value="Add" style="width: 80px; float: right;"/>
+                  <div id="wrap7"></div>
+              </div>
+              <br><br>
+
+              <div class="mb-3">
+                <h4 style="float: right;">العلامات المرجعية</h4>
+                <input type="text" placeholder="1" oninput="this.className = ''" name="">
+                <input type="button" id="btn8" value="Add" style="width: 80px; float: right;"/>
+                <div id="wrap8"></div>
+            </div>
+            
+
+                </div>
+
+                <!-- step four -->
+                <div class="step">
+                  <p class="text-center mb-4">We will never sell it</p>
+                  <div class="mb-3">
+                      <input type="text" placeholder="Full name" oninput="this.className = ''" name="fullname">
+                  </div>
+                  <div class="mb-3">
+                      <input type="text" placeholder="Mobile" oninput="this.className = ''" name="mobile">
+                  </div>
+                  <div class="mb-3">
+                      <input type="text" placeholder="Address" oninput="this.className = ''" name="address">
+                  </div>
+              </div>
+            
+                <!-- start previous / next buttons -->
+                <div class="form-footer d-flex">
+                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                </div>
+                <!-- end previous / next buttons -->
+            </form>
+          </section>
+           
+  
+           
+            
+            <!-- partial -->
+          </div>
+         
+         
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer text-center">
+          <div>
+            <span class="text-muted  d-block ">Al Azhar University </span>
+            <span class=" d-block mt-1 mt-sm-0">Faculty of Engineering, Department of Systems and Computers</span>
+       
+          </div> 
+          
+        </footer> 
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>   
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <script>
+    
+  </script>
+  <!-- plugins:js -->
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="../../vendors/chart.js/Chart.min.js"></script>
+  <script src="../../vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="../../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <script src="../../js/dataTables.select.min.js"></script>
+
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+  <script src="../../js/settings.js"></script>
+  <script src="../../js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="../../js/dashboard.js"></script>
+  <script src="../../js/Chart.roundedBarCharts.js"></script>
+  
+  <!-- End custom js for this page-->
+  <script src="../../jquery-3.7.0.js">
+</script>  
+<script src="../../jquery-3.7.0.min.js">
+</script>  
+<script src="../../css/multi-step.css"></script>
+<script src="D:\Graduation_Project\step.js"></script>
+<script src="D:\Graduation_Project\add1.js"></script>
+</body>
+
+</html>
+

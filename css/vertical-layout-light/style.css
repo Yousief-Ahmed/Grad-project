@@ -24662,6 +24662,8 @@ dl li {
   padding: .75rem 1.5rem;
 }
 
+
+
 @media (max-width: 767px) {
   .nav-tabs .nav-link {
     padding: .75rem .5rem;
@@ -30593,3 +30595,121 @@ div.tagsinput span.tag a {
 }
 
 /*# sourceMappingURL=../maps/vertical-layout-light/style.css.map */
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+#program_specs {
+  max-width: 800px;
+  background-color: #ffffff;
+  margin: 40px auto;
+  margin-left: 160px;
+  padding: 40px;
+  box-shadow: 0px 6px 18px rgb(0 0 0 / 9%);
+  border-radius: 12px;
+}
+#program_specs .form-header {
+  gap: 5px;
+  text-align: center;
+  font-size: .9em;
+}
+#program_specs .form-header .stepIndicator {
+  position: relative;
+  flex: 1;
+  padding-bottom: 30px;
+}
+#program_specs .form-header .stepIndicator.active {
+  font-weight: 600;
+}
+#program_specs .form-header .stepIndicator.finish {
+  font-weight: 600;
+  color: #4B49AC;
+}
+#program_specs .form-header .stepIndicator::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  z-index: 9;
+  width: 20px;
+  height: 20px;
+  background-color:#6b69c9;
+  border-radius: 50%;
+  border: 3px solid #ecf5f4;
+}
+#program_specs .form-header .stepIndicator.active::before {
+  background-color: #4B49AC;
+  /* border: 3px solid #d5f9f6; */
+}
+#program_specs .form-header .stepIndicator.finish::before {
+  background-color: #4B49AC;
+  /* border: 3px solid #b7e1dd; */
+}
+#program_specs .form-header .stepIndicator::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  width: 100%;
+  height: 3px;
+  background-color: #f3f3f3;
+}
+#program_specs .form-header .stepIndicator.active::after {
+  background-color: #a7ede8;
+}
+#program_specs .form-header .stepIndicator.finish::after {
+  background-color: #4B49AC;
+}
+#program_specs .form-header .stepIndicator:last-child:after {
+  display: none;
+}
+#program_specs input {
+  padding: 15px 20px;
+  width: 100%;
+  font-size: 1em;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+}
+#program_specs input:focus {
+  border: 1px solid #4B49AC;
+  outline: 0;
+}
+#program_specs input.invalid {
+  border: 1px solid #ffaba5;
+}
+#program_specs .step {
+display: none;
+}
+#program_specs .form-footer{
+  overflow:auto;
+  gap: 20px;
+}
+#program_specs .form-footer button{
+  background-color: #4B49AC;
+  border: 1px solid #4B49AC !important;
+  color: #ffffff;
+  border: none;
+  padding: 13px 30px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  flex: 1;
+  margin-top: 5px;
+}
+#program_specs .form-footer button:hover {
+opacity: 0.8;
+}
+
+#program_specs .form-footer #prevBtn {
+  background-color: #fff;
+  color: #4B49AC;
+}
+
+label {
+  float: right;
+}
+
+::placeholder {
+  float: right;
+}
+

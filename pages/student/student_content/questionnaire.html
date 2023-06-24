@@ -1,0 +1,2354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <title>All courses</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="D:\Graduation_Project\vendors\feather\feather.css" />
+  <link rel="stylesheet" href="D:\Graduation_Project\vendors\ti-icons\css\themify-icons.css" />
+  <link rel="stylesheet" href="D:\Graduation_Project\vendors\css\vendor.bundle.base.css" />
+  <script src="https://kit.fontawesome.com/8604f86d81.js" crossorigin="anonymous"></script>
+  
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link
+    rel="stylesheet"
+    href="D:\Graduation_Project\vendors\datatables.net-bs4\dataTables.bootstrap4.css"
+  />
+  <link rel="stylesheet" href="D:\Graduation_Project\vendors\ti-icons\css\themify-icons.css" />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="D:\Graduation_Project\js\select.dataTables.min.css"
+  />
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="D:\Graduation_Project\css\vertical-layout-light\style.css" />
+  <!-- endinject -->
+  <link rel="shortcut icon" href="D:\Graduation_Project\images\logo.jpg" />
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo mr-5 pl-5" href="D:\Graduation_Project\index.html">Academic quality</a>
+        <a class="navbar-brand brand-logo-mini" href="D:\Graduation_Project\index.html"><img src="D:\Graduation_Project\images\logo.jpg" class="mr-2" alt="logo"/></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item nav-search d-none d-lg-block">
+            <div class="input-group">
+              <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+                <span class="input-group-text" id="search">
+                  <i class="icon-search"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search">
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+              <i class="icon-bell mx-0"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+              <!-- <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-success">
+                    <i class="ti-info-alt mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Application Error</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Just now
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-warning">
+                    <i class="ti-settings mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Settings</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Private message
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-info">
+                    <i class="ti-user mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">New user registration</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    2 days ago
+                  </p>
+                </div>
+              </a> -->
+            </div>
+          </li>
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+              <img src="D:\Graduation_Project\images\icon_4.png" alt="profile"/>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item" href="settings.html">
+                <i class="ti-settings text-primary"></i>
+                Settings
+              </a>
+              <a class="dropdown-item" href="login.html">
+                <i class="ti-power-off text-primary"></i>
+                Logout
+              </a>
+            </div>
+          </li>
+                </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper">
+        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <p class="settings-heading">SIDEBAR SKINS</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border mr-3"></div>Light</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark</div>
+          <p class="settings-heading mt-2">HEADER SKINS</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default"></div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+        
+          <li class="nav-item">
+            <a class="nav-link" href="D:\Graduation_Project\index.html">
+            <i class="fa-solid fa-house"></i>
+            <span class="menu-title pl-3 pt-1">Home</span>
+          </a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-toggle="collapse"
+              href="#Professors"
+              aria-expanded="false"
+              aria-controls="Professors"
+            >
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title pt-2">Professors</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="Professors">
+              <ul class="nav flex-column sub-menu">
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="D:\Graduation_Project\pages\Professors\prof.html">
+                    
+                    <span class="menu-title ">Abdelfattah</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <span class="text-light">Ali Rashed </span>
+                  </button>
+
+                  <div class="dropdown-menu" id="second-grade">
+                    <ul class="nav flex-column sub-menu">
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Subject1</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Subject2</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Subject3</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Subject4</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+               
+              </ul>
+            </div>
+          </li>
+          
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-toggle="collapse"
+              href="#courses"
+              aria-expanded="false"
+              aria-controls="courses"
+            >
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title pt-2">Courses</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="courses">
+              <ul class="nav flex-column sub-menu">
+                
+                <li class="nav-item">
+                  
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <span class="text-light ">First grade </span>
+                  </button>
+
+                  <div class="dropdown-menu" id="first-grade">
+                    <ul class="nav flex-column sub-menu">
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#"> Action</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item " href="#">Another action</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item " href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <span class="text-light">Second grade </span>
+                  </button>
+
+                  <div class="dropdown-menu" id="second-grade">
+                    <ul class="nav flex-column sub-menu">
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Action</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Another action</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <span class="text-light">Third grade </span>
+                  </button>
+
+                  <div class="dropdown-menu" id="third-grade">
+                    <ul class="nav flex-column sub-menu">
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Action</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Another action</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <span class="text-light">Fourth grade </span>
+                  </button>
+
+                  <div class="dropdown-menu " id="fourth-grade">
+                    <ul class="nav flex-column sub-menu">
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Action</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Another action</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link"  href="#resources" >
+              <i class="icon-layout menu-icon"></i>
+              <span class=" pt-2">Resources</span>
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-toggle="collapse"
+              href="#questionnaire"
+              aria-expanded="false"
+              aria-controls="questionnaire"
+            >
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title pt-2">Questionnaire</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="questionnaire">
+              <ul class="nav flex-column sub-menu">
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    
+                    <span class="menu-title ">Professors</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <span class="text-light">Students </span>
+                  </button>
+
+                  <div class="dropdown-menu" id="second-grade">
+                    <ul class="nav flex-column sub-menu">
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">First grade</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Second grade</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Third gade</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item  " href="#">Fourth gade</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+               
+              </ul>
+            </div>
+          </li>
+        
+
+          <li class="nav-item">
+            <a class="nav-link" href="D:\Graduation_Project\pages\student\student.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title pt-2">Student</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="D:\Graduation_Project\pages\student_affaris\student_affairs.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title pt-2">Student Affairs</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="D:\Graduation_Project\pages\program\program.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title pt-2">Program reports</span>
+            </a>
+          </li>
+        
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <!-- Welcome Message -->
+          <div class="row">
+            <h3 class="font-weight-bold">Questionnaire</h3> 
+          </div>
+           <!-- Welcome Message -->
+          
+         
+          
+            <section class="bg-light py-5 py-xl-8">
+
+              <h3></h3>
+          <!-- استبيان المقرر -->
+          <div class="card m-4">
+            <div style="background-color:aliceblue;"class="card-header">
+              <legend >استبيان عام حول المقرر</legend>
+
+            </div>
+            <div class="card-body">
+              
+                <div class="qn-content" id="yui_3_17_2_1_1682425220377_28">
+                  <div class="qn-answer" id="yui_3_17_2_1_1682425220377_27">
+                      <!-- Begin HTML generated from question_rate template. -->
+          <table style="width:99.9%" id="yui_3_17_2_1_1682425220377_26">
+            <tbody id="yui_3_17_2_1_1682425220377_25">
+              <tr>
+                <td style="width:59%"></td>
+                <td title="nya"></td>
+                <td style="width:8%; text-align:center;" class="smalltext">1</td>
+                <td style="width:8%; text-align:center;" class="smalltext">2</td>
+                <td style="width:8%; text-align:center;" class="smalltext">3</td>
+                <td style="width:8%; text-align:center;" class="smalltext">4</td>
+                <td style="width:8%; text-align:center;" class="smalltext">5</td>
+              </tr><tr class="raterow" id="yui_3_17_2_1_1682425220377_24">
+                <td class="p-2" style="text-align: left;">
+                  يرتبط بالتخصص&nbsp;
+                  
+                  
+                </td>
+                <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()" id="yui_3_17_2_1_1682425220377_33">
+                  
+                  
+                
+                </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_279_1'.length>0) document.getElementById('q48_279_1').click()" id="yui_3_17_2_1_1682425220377_23">
+                  
+                  <input type="radio" name="q48_279" id="q48_279_1" value="1">
+                  </td>
+                <td style="text-align:center" class="c1 raterow" onclick="if('q48_279_2'.length>0) document.getElementById('q48_279_2').click()">
+                  
+          
+                  <input type="radio" name="q48_279" id="q48_279_2" value="2">
+           
+                </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_279_3'.length>0) document.getElementById('q48_279_3').click()">
+                  
+                  
+                  <input type="radio" name="q48_279" id="q48_279_3" value="3">
+                
+                </td>
+                <td style="text-align:center" class="c1 raterow" onclick="if('q48_279_4'.length>0) document.getElementById('q48_279_4').click()">
+                  
+                     
+                  <input type="radio" name="q48_279" id="q48_279_4" value="4">
+     
+                </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_279_5'.length>0) document.getElementById('q48_279_5').click()">
+                  
+                    
+                  <input type="radio" name="q48_279" id="q48_279_5" value="5">
+                  
+                </td>
+              </tr>
+              <tr class="raterow">
+                <td class="p-2"style="text-align: left;">
+                  يتضمن معلومات حديثة&nbsp;
+                  
+                  
+                </td>
+                <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+                  
+                    
+                </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_280_1'.length>0) document.getElementById('q48_280_1').click()">
+                  <input type="radio" name="q48_280" id="q48_280_1" value="1">
+               </td>
+                <td style="text-align:center" class="c1 raterow" onclick="if('q48_280_2'.length>0) document.getElementById('q48_280_2').click()">
+                  <input type="radio" name="q48_280" id="q48_280_2" value="2">
+                  </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_280_3'.length>0) document.getElementById('q48_280_3').click()">
+                 <input type="radio" name="q48_280" id="q48_280_3" value="3">
+                </td>
+                <td style="text-align:center" class="c1 raterow" onclick="if('q48_280_4'.length>0) document.getElementById('q48_280_4').click()">
+                  
+                     
+                  <input type="radio" name="q48_280" id="q48_280_4" value="4">
+                  </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_280_5'.length>0) document.getElementById('q48_280_5').click()">
+                  
+                    
+                  <input type="radio" name="q48_280" id="q48_280_5" value="5">
+                  </td>
+              </tr>
+              <tr class="raterow">
+                <td class="p-2" style="text-align: left;">
+                  يوفر أمثلة عملية&nbsp;
+                  
+                  
+                </td>
+                <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+                  
+                  </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_281_1'.length>0) document.getElementById('q48_281_1').click()">
+                  
+                  <input type="radio" name="q48_281" id="q48_281_1" value="1">
+                 </td>
+                <td style="text-align:center" class="c1 raterow" onclick="if('q48_281_2'.length>0) document.getElementById('q48_281_2').click()">
+                  
+                  <input type="radio" name="q48_281" id="q48_281_2" value="2">
+                   </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_281_3'.length>0) document.getElementById('q48_281_3').click()">
+                  
+                  <input type="radio" name="q48_281" id="q48_281_3" value="3">
+                  </td>
+                <td style="text-align:center" class="c1 raterow" onclick="if('q48_281_4'.length>0) document.getElementById('q48_281_4').click()">
+                  
+                     
+                  <input type="radio" name="q48_281" id="q48_281_4" value="4">
+                </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_281_5'.length>0) document.getElementById('q48_281_5').click()">
+                  
+                    
+                  <input type="radio" name="q48_281" id="q48_281_5" value="5">
+                   </td>
+              </tr>
+              <tr class="raterow">
+                <td class="p-2" style="text-align: left;">
+                  يقابل توقعاتي&nbsp;
+                  
+                  
+                </td>
+                <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+                  </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_282_1'.length>0) document.getElementById('q48_282_1').click()">
+                  
+                  <input type="radio" name="q48_282" id="q48_282_1" value="1">
+                     </td>
+                <td style="text-align:center" class="c1 raterow" onclick="if('q48_282_2'.length>0) document.getElementById('q48_282_2').click()">
+                  
+                  <input type="radio" name="q48_282" id="q48_282_2" value="2">
+                  </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_282_3'.length>0) document.getElementById('q48_282_3').click()">
+                  <input type="radio" name="q48_282" id="q48_282_3" value="3">
+                   </td>
+                <td style="text-align:center" class="c1 raterow" onclick="if('q48_282_4'.length>0) document.getElementById('q48_282_4').click()">
+                  
+                     
+                  <input type="radio" name="q48_282" id="q48_282_4" value="4">
+                   </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_282_5'.length>0) document.getElementById('q48_282_5').click()">
+                  
+                    
+                  <input type="radio" name="q48_282" id="q48_282_5" value="5">
+                    </td>
+              </tr>
+              <tr class="raterow">
+                <td class="p-2" style="text-align: left;">
+                  مفيد فى التطبيق العملى&nbsp;
+                  
+                  
+                </td>
+                <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+                  </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_283_1'.length>0) document.getElementById('q48_283_1').click()">
+                  
+                 <input type="radio" name="q48_283" id="q48_283_1" value="1">
+                  </td>
+                <td style="text-align:center" class="c1 raterow" onclick="if('q48_283_2'.length>0) document.getElementById('q48_283_2').click()">
+                  <input type="radio" name="q48_283" id="q48_283_2" value="2">
+                   </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_283_3'.length>0) document.getElementById('q48_283_3').click()">
+                  <input type="radio" name="q48_283" id="q48_283_3" value="3">
+                  </td>
+                <td style="text-align:center" class="c1 raterow" onclick="if('q48_283_4'.length>0) document.getElementById('q48_283_4').click()">
+                  
+                     
+                  <input type="radio" name="q48_283" id="q48_283_4" value="4">
+                  </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_283_5'.length>0) document.getElementById('q48_283_5').click()">
+                  
+                    
+                  <input type="radio" name="q48_283" id="q48_283_5" value="5">
+                   </td>
+              </tr>
+              <tr class="raterow">
+                <td class="p-2" style="text-align: left;">مفهوم&nbsp;
+                  
+                  
+                </td>
+                <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+                </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_284_1'.length>0) document.getElementById('q48_284_1').click()">
+                 <input type="radio" name="q48_284" id="q48_284_1" value="1">
+                  </td>
+                <td style="text-align:center" class="c1 raterow" onclick="if('q48_284_2'.length>0) document.getElementById('q48_284_2').click()">
+                   <input type="radio" name="q48_284" id="q48_284_2" value="2">
+                   </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_284_3'.length>0) document.getElementById('q48_284_3').click()">
+                  <input type="radio" name="q48_284" id="q48_284_3" value="3">
+                   </td>
+                <td style="text-align:center" class="c1 raterow" onclick="if('q48_284_4'.length>0) document.getElementById('q48_284_4').click()">
+                  
+                     
+                  <input type="radio" name="q48_284" id="q48_284_4" value="4">
+                   </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_284_5'.length>0) document.getElementById('q48_284_5').click()">
+                 <input type="radio" name="q48_284" id="q48_284_5" value="5">
+                   </td>
+              </tr>
+              <tr class="raterow">
+                <td class="p-2" style="text-align: left;">عموما جيد&nbsp;      
+                </td>
+                <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()"> 
+                  </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_285_1'.length>0) document.getElementById('q48_285_1').click()">
+                 <input type="radio" name="q48_285" id="q48_285_1" value="1">
+                </td>
+                <td style="text-align:center" class="c1 raterow" onclick="if('q48_285_2'.length>0) document.getElementById('q48_285_2').click()">
+                  <input type="radio" name="q48_285" id="q48_285_2" value="2">
+                 </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_285_3'.length>0) document.getElementById('q48_285_3').click()">
+                  <input type="radio" name="q48_285" id="q48_285_3" value="3">
+                  </td>
+                <td style="text-align:center" class="c1 raterow" onclick="if('q48_285_4'.length>0) document.getElementById('q48_285_4').click()">
+                  
+                     
+                  <input type="radio" name="q48_285" id="q48_285_4" value="4">
+                   </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_285_5'.length>0) document.getElementById('q48_285_5').click()">
+                  
+                    
+                  <input type="radio" name="q48_285" id="q48_285_5" value="5">
+                  
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- End HTML generated from question_rate template. -->
+                  </div>
+              </div>
+            
+            </div>
+          </div>
+          <!-- مخرجات التعلم -->
+          <div class="card m-4">
+            <div style="background-color:aliceblue;"class="card-header">
+              <legend >مخرجات التعلم المستهدفة</legend>
+            </div>
+            <div class="card-body">
+              
+                <div class="qn-content">
+                  <div class="qn-answer">
+                      <!-- Begin HTML generated from question_rate template. -->
+          <table style="width:99.9%" id="yui_3_17_2_1_1682425220377_26">
+            <tbody id="yui_3_17_2_1_1682425220377_25">
+              <tr>
+                <td style="width:59%"></td>
+                <td title="nya"></td>
+                <td style="width:8%; text-align:center;" class="smalltext">1</td>
+                <td style="width:8%; text-align:center;" class="smalltext">2</td>
+                <td style="width:8%; text-align:center;" class="smalltext">3</td>
+                <td style="width:8%; text-align:center;" class="smalltext">4</td>
+                <td style="width:8%; text-align:center;" class="smalltext">5</td>
+              </tr>
+              <tr class="raterow">
+                <td class="p-2" style="text-align: left;">
+                  المقرر له أهداف واضحة ومعلنة&nbsp;
+                </td>
+                <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">  </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q49_286_1'.length>0) document.getElementById('q49_286_1').click()">
+                  <input type="radio" name="q49_286" id="q49_286_1" value="1">
+                </td>
+                <td style="text-align:center" class="c1 raterow" onclick="if('q49_286_2'.length>0) document.getElementById('q49_286_2').click()">
+                  <input type="radio" name="q49_286" id="q49_286_2" value="2">
+                </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q49_286_3'.length>0) document.getElementById('q49_286_3').click()">
+                  <input type="radio" name="q49_286" id="q49_286_3" value="3">
+                </td>
+                <td style="text-align:center" class="c1 raterow" onclick="if('q49_286_4'.length>0) document.getElementById('q49_286_4').click()">
+                  <input type="radio" name="q49_286" id="q49_286_4" value="4">
+                </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q49_286_5'.length>0) document.getElementById('q49_286_5').click()">
+                  <input type="radio" name="q49_286" id="q49_286_5" value="5">
+                 </td>
+              </tr>
+              <tr class="raterow">
+                <td class="p-2"style="text-align: left;">
+                  المقرر يزودنى بالمعرفة المفيدة والفهم المتعمق للموضوع &nbsp;
+                </td>
+                <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">  </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_287_1'.length>0) document.getElementById('q48_287_1').click()">
+                  <input type="radio" name="q48_287" id="q48_287_1" value="1">
+                </td>
+                <td style="text-align:center" class="c1 raterow" onclick="if('q48_287_2'.length>0) document.getElementById('q48_287_2').click()">
+                  <input type="radio" name="q48_287" id="q48_287_2" value="2">
+                </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_287_3'.length>0) document.getElementById('q48_287_3').click()">
+                  <input type="radio" name="q48_287" id="q48_287_3" value="3">
+                </td>
+                <td style="text-align:center" class="c1 raterow" onclick="if('q48_287_4'.length>0) document.getElementById('q48_287_4').click()">
+                  <input type="radio" name="q48_287" id="q48_287_4" value="4">
+                </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_287_5'.length>0) document.getElementById('q48_287_5').click()">
+                  <input type="radio" name="q48_287" id="q48_287_5" value="5">
+                 </td>
+              </tr>
+              <tr class="raterow">
+                <td class="p-2" style="text-align: left;">
+                  المقرر يحفزنى على التفكير &nbsp;
+                </td>
+                <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+                  
+                  </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_288_1'.length>0) document.getElementById('q48_288_1').click()">
+                  
+                  <input type="radio" name="q48_288" id="q48_288_1" value="1">
+                 </td>
+                <td style="text-align:center" class="c1 raterow" onclick="if('q48_288_2'.length>0) document.getElementById('q48_288_2').click()">
+                  
+                  <input type="radio" name="q48_288" id="q48_288_2" value="2">
+                   </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_288_3'.length>0) document.getElementById('q48_288_3').click()">
+                  
+                  <input type="radio" name="q48_288" id="q48_288_3" value="3">
+                  </td>
+                <td style="text-align:center" class="c1 raterow" onclick="if('q48_288_4'.length>0) document.getElementById('q48_288_4').click()">
+                  
+                     
+                  <input type="radio" name="q48_288" id="q48_288_4" value="4">
+                </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_288_5'.length>0) document.getElementById('q48_288_5').click()">
+                  
+                    
+                  <input type="radio" name="q48_288" id="q48_288_5" value="5">
+                   </td>
+              </tr>
+              <tr class="raterow">
+                <td class="p-2" style="text-align: left;">
+                  أكسبني المقرر بعض المهارات المهنية التي تفيد في الحياة العملية 	&nbsp;
+                </td>
+                <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+                  </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_289_1'.length>0) document.getElementById('q48_289_1').click()">
+                  
+                  <input type="radio" name="q48_289" id="q48_289_1" value="1">
+                     </td>
+                <td style="text-align:center" class="c1 raterow" onclick="if('q48_289_2'.length>0) document.getElementById('q48_289_2').click()">
+                  
+                  <input type="radio" name="q48_289" id="q48_289_2" value="2">
+                  </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_289_3'.length>0) document.getElementById('q48_289_3').click()">
+                  <input type="radio" name="q48_289" id="q48_289_3" value="3">
+                   </td>
+                <td style="text-align:center" class="c1 raterow" onclick="if('q48_289_4'.length>0) document.getElementById('q48_289_4').click()">
+                  
+                     
+                  <input type="radio" name="q48_289" id="q48_289_4" value="4">
+                   </td>
+                <td style="text-align:center" class="c0 raterow" onclick="if('q48_289_5'.length>0) document.getElementById('q48_289_5').click()">
+                  
+                    
+                  <input type="radio" name="q48_289" id="q48_289_5" value="5">
+                    </td>
+              </tr>
+              
+            </tbody>
+          </table>
+          <!-- End HTML generated from question_rate template. -->
+                  </div>
+              </div>
+            
+            </div>
+          </div>
+          <!-- المحاضرات -->
+          <div class="card m-4">
+            <div style="background-color:aliceblue;"class="card-header">
+              <legend >المحاضرات</legend>
+
+            </div>
+            <div class="card-body">
+              <div class="qn-content">
+                <div class="qn-answer">
+                    <!-- Begin HTML generated from question_rate template. -->
+        <table style="width:99.9%">
+          <tbody>
+            <tr>
+              <td style="width:59%"></td>
+              <td title="nya"></td>
+              <td style="width:8%; text-align:center;" class="smalltext">1</td>
+              <td style="width:8%; text-align:center;" class="smalltext">2</td>
+              <td style="width:8%; text-align:center;" class="smalltext">3</td>
+              <td style="width:8%; text-align:center;" class="smalltext">4</td>
+              <td style="width:8%; text-align:center;" class="smalltext">5</td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                يتم تقديم المحاضرات وفقاً لمواعيد الجداول المحددة والمعلنة&nbsp;
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q50_290_1'.length>0) document.getElementById('q50_290_1').click()">
+                
+                <input type="radio" name="q50_290" id="q50_290_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q50_290_2'.length>0) document.getElementById('q50_290_2').click()">
+                
+                <input type="radio" name="q50_290" id="q50_290_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q50_290_3'.length>0) document.getElementById('q50_290_3').click()">
+                
+                <input type="radio" name="q50_290" id="q50_290_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q50_290_4'.length>0) document.getElementById('q50_290_4').click()">
+                
+                <input type="radio" name="q50_290" id="q50_290_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q50_290_5'.length>0) document.getElementById('q50_290_5').click()">
+                <input type="radio" name="q50_290" id="q50_290_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                تساهم المحاضرات فى تفهم موضوع المقرر&nbsp;
+                
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q50_291_1'.length>0) document.getElementById('q50_291_1').click()">
+                
+                <input type="radio" name="q50_291" id="q50_291_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q50_291_2'.length>0) document.getElementById('q50_291_2').click()">
+                
+                <input type="radio" name="q50_291" id="q50_291_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q50_291_3'.length>0) document.getElementById('q50_291_3').click()">
+                
+                <input type="radio" name="q50_291" id="q50_291_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q50_291_4'.length>0) document.getElementById('q50_291_4').click()">
+                
+                <input type="radio" name="q50_291" id="q50_291_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q50_291_5'.length>0) document.getElementById('q50_291_5').click()">
+                
+               
+                <input type="radio" name="q50_291" id="q50_291_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                تغطى المحاضرات كل الموضوعات التى اشتملت عليها قائمة محتوياته&nbsp;
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q50_292_1'.length>0) document.getElementById('q50_292_1').click()">
+                
+                <input type="radio" name="q50_292" id="q50_292_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q50_292_2'.length>0) document.getElementById('q50_292_2').click()">
+                
+                <input type="radio" name="q50_292" id="q50_292_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q50_292_3'.length>0) document.getElementById('q50_292_3').click()">
+                
+                <input type="radio" name="q50_292" id="q50_292_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q50_292_4'.length>0) document.getElementById('q50_292_4').click()">
+                
+                <input type="radio" name="q50_292" id="q50_292_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q50_292_5'.length>0) document.getElementById('q50_292_5').click()">
+                
+               
+                <input type="radio" name="q50_292" id="q50_292_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                يتم تقديم المحاضرات بأسلوب شائق&nbsp;
+                
+                
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q50_293_1'.length>0) document.getElementById('q50_293_1').click()">
+                
+                <input type="radio" name="q50_293" id="q50_293_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q50_293_2'.length>0) document.getElementById('q50_293_2').click()">
+                
+                <input type="radio" name="q50_293" id="q50_293_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q50_293_3'.length>0) document.getElementById('q50_293_3').click()">
+                
+                <input type="radio" name="q50_293" id="q50_293_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q50_293_4'.length>0) document.getElementById('q50_293_4').click()">
+                
+                <input type="radio" name="q50_293" id="q50_293_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q50_293_5'.length>0) document.getElementById('q50_293_5').click()">
+                
+               
+                <input type="radio" name="q50_293" id="q50_293_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                تضمنت المحاضرات المشاركة من جانب الطلاب&nbsp;                
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">                
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q50_294_1'.length>0) document.getElementById('q50_294_1').click()">
+                
+                <input type="radio" name="q50_294" id="q50_294_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q50_294_2'.length>0) document.getElementById('q50_294_2').click()">
+                
+                <input type="radio" name="q50_294" id="q50_294_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q50_294_3'.length>0) document.getElementById('q50_294_3').click()">
+                
+                <input type="radio" name="q50_294" id="q50_294_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q50_294_4'.length>0) document.getElementById('q50_294_4').click()">
+                
+                <input type="radio" name="q50_294" id="q50_294_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q50_294_5'.length>0) document.getElementById('q50_294_5').click()">
+                
+               
+                <input type="radio" name="q50_294" id="q50_294_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                اشتملت المحاضرات على حالات عملية&nbsp;
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">   
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q50_295_1'.length>0) document.getElementById('q50_295_1').click()">
+                
+                <input type="radio" name="q50_295" id="q50_295_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q50_295_2'.length>0) document.getElementById('q50_295_2').click()">
+                
+                <input type="radio" name="q50_295" id="q50_295_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q50_295_3'.length>0) document.getElementById('q50_295_3').click()">
+                
+                <input type="radio" name="q50_295" id="q50_295_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q50_295_4'.length>0) document.getElementById('q50_295_4').click()">
+                
+                <input type="radio" name="q50_295" id="q50_295_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q50_295_5'.length>0) document.getElementById('q50_295_5').click()">
+                
+               
+                <input type="radio" name="q50_295" id="q50_295_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                مقدار المعلومات المقدمة فى المحاضرات مناسب&nbsp;
+
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+             </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q50_296_1'.length>0) document.getElementById('q50_296_1').click()">
+                
+                <input type="radio" name="q50_296" id="q50_296_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q50_296_2'.length>0) document.getElementById('q50_296_2').click()">
+                
+                <input type="radio" name="q50_296" id="q50_296_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q50_296_3'.length>0) document.getElementById('q50_296_3').click()">
+                
+                <input type="radio" name="q50_296" id="q50_296_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q50_296_4'.length>0) document.getElementById('q50_296_4').click()">
+                
+                <input type="radio" name="q50_296" id="q50_296_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q50_296_5'.length>0) document.getElementById('q50_296_5').click()">
+                
+               
+                <input type="radio" name="q50_296" id="q50_296_5" value="5">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- End HTML generated from question_rate template. -->
+                </div>
+            </div>
+            </div>
+          </div>
+          <!-- المحاضر -->
+          <div class="card m-4">
+            <div style="background-color:aliceblue;"class="card-header">
+              <legend >المحاضر</legend>
+
+            </div>
+            <div class="card-body">
+              <div class="qn-content">
+                <div class="qn-answer">
+                    <!-- Begin HTML generated from question_rate template. -->
+        <table style="width:99.9%">
+          <tbody>
+            <tr>
+              <td style="width:59%"></td>
+              <td title="nya"></td>
+              <td style="width:8%; text-align:center;" class="smalltext">1</td>
+              <td style="width:8%; text-align:center;" class="smalltext">2</td>
+              <td style="width:8%; text-align:center;" class="smalltext">3</td>
+              <td style="width:8%; text-align:center;" class="smalltext">4</td>
+              <td style="width:8%; text-align:center;" class="smalltext">5</td>
+            </tr><tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                يلتزم المحاضر دائماً بمحتويات المقرر&nbsp;
+
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()"> </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_297_1'.length>0) document.getElementById('q51_297_1').click()">
+                
+                <input type="radio" name="q51_297" id="q51_297_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q51_297_2'.length>0) document.getElementById('q51_297_2').click()">
+                
+                <input type="radio" name="q51_297" id="q51_297_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_297_3'.length>0) document.getElementById('q51_297_3').click()">
+                
+                <input type="radio" name="q51_297" id="q51_297_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q51_297_4'.length>0) document.getElementById('q51_297_4').click()">
+                
+                <input type="radio" name="q51_297" id="q51_297_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_297_5'.length>0) document.getElementById('q51_297_5').click()">
+                
+                <input type="radio" name="q51_297" id="q51_297_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                يلتزم المحاضر دائماً بمواعيد بدء ٕوانتهاء المحاضرة&nbsp;
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_298_1'.length>0) document.getElementById('q51_298_1').click()">
+                
+                <input type="radio" name="q51_298" id="q51_298_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q51_298_2'.length>0) document.getElementById('q51_298_2').click()">
+                
+                <input type="radio" name="q51_298" id="q51_298_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_298_3'.length>0) document.getElementById('q51_298_3').click()">
+                
+                <input type="radio" name="q51_298" id="q51_298_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q51_298_4'.length>0) document.getElementById('q51_298_4').click()">
+                
+                <input type="radio" name="q51_298" id="q51_298_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_298_5'.length>0) document.getElementById('q51_298_5').click()">
+                
+                <input type="radio" name="q51_298" id="q51_298_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                أشعر بأن المحاضر دائماً مستعد جيدا ًللمحاضرة&nbsp;
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_299_1'.length>0) document.getElementById('q51_299_1').click()">
+                
+                <input type="radio" name="q51_299" id="q51_299_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q51_299_2'.length>0) document.getElementById('q51_299_2').click()">
+                
+                <input type="radio" name="q51_299" id="q51_299_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_299_3'.length>0) document.getElementById('q51_299_3').click()">
+                
+                <input type="radio" name="q51_299" id="q51_299_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q51_299_4'.length>0) document.getElementById('q51_299_4').click()">
+                
+                <input type="radio" name="q51_299" id="q51_299_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_299_5'.length>0) document.getElementById('q51_299_5').click()">
+                
+                <input type="radio" name="q51_299" id="q51_299_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                يعالج المحاضر موضوعات المقرر بعمق&nbsp;
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_300_1'.length>0) document.getElementById('q51_300_1').click()">
+                
+                <input type="radio" name="q51_300" id="q51_300_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q51_300_2'.length>0) document.getElementById('q51_300_2').click()">
+                
+                <input type="radio" name="q51_300" id="q51_300_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_300_3'.length>0) document.getElementById('q51_300_3').click()">
+                
+                <input type="radio" name="q51_300" id="q51_300_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q51_300_4'.length>0) document.getElementById('q51_300_4').click()">
+                
+                <input type="radio" name="q51_300" id="q51_300_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_300_5'.length>0) document.getElementById('q51_300_5').click()">
+                
+                <input type="radio" name="q51_300" id="q51_300_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td  class="p-2" style="text-align: left;">
+                يشجع المحاضر الطلاب على الأسئلة والتعبير عن وجهة نظرهم&nbsp;
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_301_1'.length>0) document.getElementById('q51_301_1').click()">
+                
+                <input type="radio" name="q51_301" id="q51_301_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q51_301_2'.length>0) document.getElementById('q51_301_2').click()">
+                
+                <input type="radio" name="q51_301" id="q51_301_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_301_3'.length>0) document.getElementById('q51_301_3').click()">
+                
+                <input type="radio" name="q51_301" id="q51_301_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q51_301_4'.length>0) document.getElementById('q51_301_4').click()">
+                
+                <input type="radio" name="q51_301" id="q51_301_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_301_5'.length>0) document.getElementById('q51_301_5').click()">
+                
+                <input type="radio" name="q51_301" id="q51_301_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                يستثمر المحاضر وقت المحاضرة فى التدريس الفعلى&nbsp;
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_302_1'.length>0) document.getElementById('q51_302_1').click()">
+                
+                <input type="radio" name="q51_302" id="q51_302_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q51_302_2'.length>0) document.getElementById('q51_302_2').click()">
+                
+                <input type="radio" name="q51_302" id="q51_302_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_302_3'.length>0) document.getElementById('q51_302_3').click()">
+                
+                <input type="radio" name="q51_302" id="q51_302_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q51_302_4'.length>0) document.getElementById('q51_302_4').click()">
+                
+                <input type="radio" name="q51_302" id="q51_302_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_302_5'.length>0) document.getElementById('q51_302_5').click()">
+                
+                <input type="radio" name="q51_302" id="q51_302_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                يبدو المحاضر ذو معرفة عالية بموضوع المقرر&nbsp;
+                </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+            </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_303_1'.length>0) document.getElementById('q51_303_1').click()">
+                
+                <input type="radio" name="q51_303" id="q51_303_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q51_303_2'.length>0) document.getElementById('q51_303_2').click()">
+                
+                <input type="radio" name="q51_303" id="q51_303_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_303_3'.length>0) document.getElementById('q51_303_3').click()">
+                
+                <input type="radio" name="q51_303" id="q51_303_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q51_303_4'.length>0) document.getElementById('q51_303_4').click()">
+                
+                <input type="radio" name="q51_303" id="q51_303_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_303_5'.length>0) document.getElementById('q51_303_5').click()">
+                
+                <input type="radio" name="q51_303" id="q51_303_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                يحافظ المحاضر على جذب انتباهى&nbsp;
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_304_1'.length>0) document.getElementById('q51_304_1').click()">
+                
+                <input type="radio" name="q51_304" id="q51_304_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q51_304_2'.length>0) document.getElementById('q51_304_2').click()">
+                
+                <input type="radio" name="q51_304" id="q51_304_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_304_3'.length>0) document.getElementById('q51_304_3').click()">
+                
+                <input type="radio" name="q51_304" id="q51_304_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q51_304_4'.length>0) document.getElementById('q51_304_4').click()">
+                
+                <input type="radio" name="q51_304" id="q51_304_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_304_5'.length>0) document.getElementById('q51_304_5').click()">
+                
+                <input type="radio" name="q51_304" id="q51_304_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                يعامل المحاضر الطلاب باحترام&nbsp;
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_305_1'.length>0) document.getElementById('q51_305_1').click()">
+                
+                <input type="radio" name="q51_305" id="q51_305_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q51_305_2'.length>0) document.getElementById('q51_305_2').click()">
+                
+                <input type="radio" name="q51_305" id="q51_305_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_305_3'.length>0) document.getElementById('q51_305_3').click()">
+                
+                <input type="radio" name="q51_305" id="q51_305_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q51_305_4'.length>0) document.getElementById('q51_305_4').click()">
+                
+                <input type="radio" name="q51_305" id="q51_305_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_305_5'.length>0) document.getElementById('q51_305_5').click()">
+                
+                <input type="radio" name="q51_305" id="q51_305_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                يقدم المحاضر أمثلة وحالات عملية فعالة&nbsp;
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_306_1'.length>0) document.getElementById('q51_306_1').click()">
+                
+                <input type="radio" name="q51_306" id="q51_306_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q51_306_2'.length>0) document.getElementById('q51_306_2').click()">
+                
+                <input type="radio" name="q51_306" id="q51_306_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_306_3'.length>0) document.getElementById('q51_306_3').click()">
+                
+                <input type="radio" name="q51_306" id="q51_306_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q51_306_4'.length>0) document.getElementById('q51_306_4').click()">
+                
+                <input type="radio" name="q51_306" id="q51_306_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q51_306_5'.length>0) document.getElementById('q51_306_5').click()">
+                
+                <input type="radio" name="q51_306" id="q51_306_5" value="5">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- End HTML generated from question_rate template. -->
+                </div>
+            </div>
+            
+            </div>
+          </div>
+          <!-- عضو الهيئة المعاونة -->
+          <div class="card m-4">
+            <div style="background-color:aliceblue;"class="card-header">
+              <legend >عضو الهيئة المعاونة</legend>
+            </div>
+            <div class="card-body">
+              <div class="qn-content">
+                <div class="qn-answer">
+                    <!-- Begin HTML generated from question_rate template. -->
+        <table style="width:99.9%">
+          <tbody>
+            <tr>
+              <td style="width:59%"></td>
+              <td title="nya"></td>
+              <td style="width:8%; text-align:center;" class="smalltext">1</td>
+              <td style="width:8%; text-align:center;" class="smalltext">2</td>
+              <td style="width:8%; text-align:center;" class="smalltext">3</td>
+              <td style="width:8%; text-align:center;" class="smalltext">4</td>
+              <td style="width:8%; text-align:center;" class="smalltext">5</td>
+            </tr><tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                يعتبر دور عضو الهيئة المعاونة فعالاً&nbsp;
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q52_307_1'.length>0) document.getElementById('q52_307_1').click()">
+                
+
+                <input type="radio" name="q52_307" id="q52_307_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q52_307_2'.length>0) document.getElementById('q52_307_2').click()">
+                
+
+                <input type="radio" name="q52_307" id="q52_307_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q52_307_3'.length>0) document.getElementById('q52_307_3').click()">
+                
+
+                <input type="radio" name="q52_307" id="q52_307_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q52_307_4'.length>0) document.getElementById('q52_307_4').click()">
+                
+
+                <input type="radio" name="q52_307" id="q52_307_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q52_307_5'.length>0) document.getElementById('q52_307_5').click()">
+                
+                <input type="radio" name="q52_307" id="q52_307_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                عضو الهيئة المعاونة دائماً على استعداد للرد على أى استفسارات&nbsp;
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+                
+                
+                
+                
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q52_308_1'.length>0) document.getElementById('q52_308_1').click()">
+                
+
+                <input type="radio" name="q52_308" id="q52_308_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q52_308_2'.length>0) document.getElementById('q52_308_2').click()">
+                
+
+                <input type="radio" name="q52_308" id="q52_308_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q52_308_3'.length>0) document.getElementById('q52_308_3').click()">
+                
+
+                <input type="radio" name="q52_308" id="q52_308_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q52_308_4'.length>0) document.getElementById('q52_308_4').click()">
+                
+
+                <input type="radio" name="q52_308" id="q52_308_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q52_308_5'.length>0) document.getElementById('q52_308_5').click()">
+                
+                <input type="radio" name="q52_308" id="q52_308_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                يبدو عضو الهيئة المعاونة ملما ًبموضوعات المقرر&nbsp;
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+                
+                
+                
+                
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q52_309_1'.length>0) document.getElementById('q52_309_1').click()">
+                
+
+                <input type="radio" name="q52_309" id="q52_309_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q52_309_2'.length>0) document.getElementById('q52_309_2').click()">
+                
+
+                <input type="radio" name="q52_309" id="q52_309_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q52_309_3'.length>0) document.getElementById('q52_309_3').click()">
+                
+
+                <input type="radio" name="q52_309" id="q52_309_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q52_309_4'.length>0) document.getElementById('q52_309_4').click()">
+                
+
+                <input type="radio" name="q52_309" id="q52_309_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q52_309_5'.length>0) document.getElementById('q52_309_5').click()">
+                
+                <input type="radio" name="q52_309" id="q52_309_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                يوفر عضو الهيئة المعاونة لنا التطبيقات الكافية&nbsp;
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q52_310_1'.length>0) document.getElementById('q52_310_1').click()">
+                
+
+                <input type="radio" name="q52_310" id="q52_310_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q52_310_2'.length>0) document.getElementById('q52_310_2').click()">
+                
+
+                <input type="radio" name="q52_310" id="q52_310_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q52_310_3'.length>0) document.getElementById('q52_310_3').click()">
+                
+
+                <input type="radio" name="q52_310" id="q52_310_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q52_310_4'.length>0) document.getElementById('q52_310_4').click()">
+                
+
+                <input type="radio" name="q52_310" id="q52_310_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q52_310_5'.length>0) document.getElementById('q52_310_5').click()">
+                
+                <input type="radio" name="q52_310" id="q52_310_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                يقدم عضو الهيئة المعاونة المساعدة لكل طالب عند الحاجة لذلك&nbsp;
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+             </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q52_311_1'.length>0) document.getElementById('q52_311_1').click()">
+                
+
+                <input type="radio" name="q52_311" id="q52_311_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q52_311_2'.length>0) document.getElementById('q52_311_2').click()">
+                
+
+                <input type="radio" name="q52_311" id="q52_311_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q52_311_3'.length>0) document.getElementById('q52_311_3').click()">
+                
+
+                <input type="radio" name="q52_311" id="q52_311_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q52_311_4'.length>0) document.getElementById('q52_311_4').click()">
+                
+
+                <input type="radio" name="q52_311" id="q52_311_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q52_311_5'.length>0) document.getElementById('q52_311_5').click()">
+                
+                <input type="radio" name="q52_311" id="q52_311_5" value="5">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- End HTML generated from question_rate template. -->
+                </div>
+            </div>
+              
+            </div>
+          </div>
+          <!-- نظام التقويم -->
+          <div class="card m-4">
+            <div style="background-color:aliceblue;"class="card-header">
+              <legend >نظام التقويم</legend>
+
+            </div>
+            <div class="card-body">
+              <div class="qn-content">
+                <div class="qn-answer">
+                    <!-- Begin HTML generated from question_rate template. -->
+        <table style="width:99.9%">
+          <tbody>
+            <tr>
+              <td style="width:59%"></td>
+              <td title="nya"></td>
+              <td style="width:8%; text-align:center;" class="smalltext">1</td>
+              <td style="width:8%; text-align:center;" class="smalltext">2</td>
+              <td style="width:8%; text-align:center;" class="smalltext">3</td>
+              <td style="width:8%; text-align:center;" class="smalltext">4</td>
+              <td style="width:8%; text-align:center;" class="smalltext">5</td>
+            </tr><tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                يعتبر جدول الإمتحانات مناسباً&nbsp;
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_312_1'.length>0) document.getElementById('q53_312_1').click()">
+                
+
+                <input type="radio" name="q53_312" id="q53_312_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q53_312_2'.length>0) document.getElementById('q53_312_2').click()">
+                
+
+                <input type="radio" name="q53_312" id="q53_312_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_312_3'.length>0) document.getElementById('q53_312_3').click()">
+                
+
+                <input type="radio" name="q53_312" id="q53_312_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q53_312_4'.length>0) document.getElementById('q53_312_4').click()">
+                
+
+                <input type="radio" name="q53_312" id="q53_312_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_312_5'.length>0) document.getElementById('q53_312_5').click()">
+                
+
+                <input type="radio" name="q53_312" id="q53_312_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                يتم الإعلان عن مواعيد الإمتحانات مبكراً&nbsp;
+                
+                
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_313_1'.length>0) document.getElementById('q53_313_1').click()">
+                
+
+                <input type="radio" name="q53_313" id="q53_313_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q53_313_2'.length>0) document.getElementById('q53_313_2').click()">
+                
+
+                <input type="radio" name="q53_313" id="q53_313_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_313_3'.length>0) document.getElementById('q53_313_3').click()">
+                
+
+                <input type="radio" name="q53_313" id="q53_313_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q53_313_4'.length>0) document.getElementById('q53_313_4').click()">
+                
+
+                <input type="radio" name="q53_313" id="q53_313_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_313_5'.length>0) document.getElementById('q53_313_5').click()">
+                
+
+                <input type="radio" name="q53_313" id="q53_313_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                يعتبر عدد إمتحانات أعمال الفصل مناسباً&nbsp;
+                
+                
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_314_1'.length>0) document.getElementById('q53_314_1').click()">
+                
+
+                <input type="radio" name="q53_314" id="q53_314_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q53_314_2'.length>0) document.getElementById('q53_314_2').click()">
+                
+
+                <input type="radio" name="q53_314" id="q53_314_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_314_3'.length>0) document.getElementById('q53_314_3').click()">
+                
+
+                <input type="radio" name="q53_314" id="q53_314_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q53_314_4'.length>0) document.getElementById('q53_314_4').click()">
+                
+
+                <input type="radio" name="q53_314" id="q53_314_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_314_5'.length>0) document.getElementById('q53_314_5').click()">
+                
+
+                <input type="radio" name="q53_314" id="q53_314_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td  class="p-2" style="text-align: left;">
+                تتصف الامتحانات بالموضوعية&nbsp;
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_315_1'.length>0) document.getElementById('q53_315_1').click()">
+                
+
+                <input type="radio" name="q53_315" id="q53_315_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q53_315_2'.length>0) document.getElementById('q53_315_2').click()">
+                
+
+                <input type="radio" name="q53_315" id="q53_315_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_315_3'.length>0) document.getElementById('q53_315_3').click()">
+                
+
+                <input type="radio" name="q53_315" id="q53_315_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q53_315_4'.length>0) document.getElementById('q53_315_4').click()">
+                
+
+                <input type="radio" name="q53_315" id="q53_315_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_315_5'.length>0) document.getElementById('q53_315_5').click()">
+                
+
+                <input type="radio" name="q53_315" id="q53_315_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                الوقت المخصص للامتحانات مناسب&nbsp;
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+                </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_316_1'.length>0) document.getElementById('q53_316_1').click()">
+                
+
+                <input type="radio" name="q53_316" id="q53_316_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q53_316_2'.length>0) document.getElementById('q53_316_2').click()">
+                
+
+                <input type="radio" name="q53_316" id="q53_316_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_316_3'.length>0) document.getElementById('q53_316_3').click()">
+                
+
+                <input type="radio" name="q53_316" id="q53_316_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q53_316_4'.length>0) document.getElementById('q53_316_4').click()">
+                
+
+                <input type="radio" name="q53_316" id="q53_316_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_316_5'.length>0) document.getElementById('q53_316_5').click()">
+                
+
+                <input type="radio" name="q53_316" id="q53_316_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                تغطى الامتحانات محتويات المقرر&nbsp;
+                
+                
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_317_1'.length>0) document.getElementById('q53_317_1').click()">
+                
+
+                <input type="radio" name="q53_317" id="q53_317_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q53_317_2'.length>0) document.getElementById('q53_317_2').click()">
+                
+
+                <input type="radio" name="q53_317" id="q53_317_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_317_3'.length>0) document.getElementById('q53_317_3').click()">
+                
+
+                <input type="radio" name="q53_317" id="q53_317_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q53_317_4'.length>0) document.getElementById('q53_317_4').click()">
+                
+
+                <input type="radio" name="q53_317" id="q53_317_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_317_5'.length>0) document.getElementById('q53_317_5').click()">
+                
+
+                <input type="radio" name="q53_317" id="q53_317_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                تركز الامتحانات على الجوانب الفكرية والعملية فى المقرر&nbsp;
+                
+                
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+                </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_318_1'.length>0) document.getElementById('q53_318_1').click()">
+                
+
+                <input type="radio" name="q53_318" id="q53_318_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q53_318_2'.length>0) document.getElementById('q53_318_2').click()">
+                
+
+                <input type="radio" name="q53_318" id="q53_318_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_318_3'.length>0) document.getElementById('q53_318_3').click()">
+                
+
+                <input type="radio" name="q53_318" id="q53_318_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q53_318_4'.length>0) document.getElementById('q53_318_4').click()">
+                
+
+                <input type="radio" name="q53_318" id="q53_318_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_318_5'.length>0) document.getElementById('q53_318_5').click()">
+                
+
+                <input type="radio" name="q53_318" id="q53_318_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                تعتبر اللغة المستخدمة فى الامتحانات واضحة ومفهومة&nbsp;
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+                </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_319_1'.length>0) document.getElementById('q53_319_1').click()">
+                
+
+                <input type="radio" name="q53_319" id="q53_319_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q53_319_2'.length>0) document.getElementById('q53_319_2').click()">
+                
+
+                <input type="radio" name="q53_319" id="q53_319_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_319_3'.length>0) document.getElementById('q53_319_3').click()">
+                
+
+                <input type="radio" name="q53_319" id="q53_319_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q53_319_4'.length>0) document.getElementById('q53_319_4').click()">
+                
+
+                <input type="radio" name="q53_319" id="q53_319_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_319_5'.length>0) document.getElementById('q53_319_5').click()">
+                
+
+                <input type="radio" name="q53_319" id="q53_319_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                لا تتضمن الإمتحانات أخطاء مطبعية&nbsp;
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_320_1'.length>0) document.getElementById('q53_320_1').click()">
+                
+
+                <input type="radio" name="q53_320" id="q53_320_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q53_320_2'.length>0) document.getElementById('q53_320_2').click()">
+                
+
+                <input type="radio" name="q53_320" id="q53_320_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_320_3'.length>0) document.getElementById('q53_320_3').click()">
+                
+
+                <input type="radio" name="q53_320" id="q53_320_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q53_320_4'.length>0) document.getElementById('q53_320_4').click()">
+                
+
+                <input type="radio" name="q53_320" id="q53_320_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_320_5'.length>0) document.getElementById('q53_320_5').click()">
+                
+
+                <input type="radio" name="q53_320" id="q53_320_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                يتصف توزيع الدرجات المقررة بالعدالة&nbsp;
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+                </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_321_1'.length>0) document.getElementById('q53_321_1').click()">
+                
+
+                <input type="radio" name="q53_321" id="q53_321_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q53_321_2'.length>0) document.getElementById('q53_321_2').click()">
+                
+
+                <input type="radio" name="q53_321" id="q53_321_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_321_3'.length>0) document.getElementById('q53_321_3').click()">
+                
+
+                <input type="radio" name="q53_321" id="q53_321_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q53_321_4'.length>0) document.getElementById('q53_321_4').click()">
+                
+
+                <input type="radio" name="q53_321" id="q53_321_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q53_321_5'.length>0) document.getElementById('q53_321_5').click()">
+                
+
+                <input type="radio" name="q53_321" id="q53_321_5" value="5">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- End HTML generated from question_rate template. -->
+                </div>
+            </div>
+            </div>
+          </div>
+          <!-- المعامل والورش -->
+          <div class="card m-4">
+            <div style="background-color:aliceblue;"class="card-header">
+              <legend >المعامل/الورش</legend>
+
+            </div>
+            <div class="card-body">
+              <div class="qn-content">
+                <div class="qn-answer">
+                    <!-- Begin HTML generated from question_rate template. -->
+        <table style="width:99.9%">
+          <tbody>
+            <tr>
+              <td style="width:59%"></td>
+              <td title="nya"></td>
+              <td style="width:8%; text-align:center;" class="smalltext">1</td>
+              <td style="width:8%; text-align:center;" class="smalltext">2</td>
+              <td style="width:8%; text-align:center;" class="smalltext">3</td>
+              <td style="width:8%; text-align:center;" class="smalltext">4</td>
+              <td style="width:8%; text-align:center;" class="smalltext">5</td>
+            </tr><tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                يتوافر بالكلية معامل كافية لتحقيق أهداف العملية التعليمية&nbsp;
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+                </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q54_322_1'.length>0) document.getElementById('q54_322_1').click()">
+                
+
+                <input type="radio" name="q54_322" id="q54_322_1" value="1">
+                </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q54_322_2'.length>0) document.getElementById('q54_322_2').click()">
+                
+
+                <input type="radio" name="q54_322" id="q54_322_2" value="2">
+                </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q54_322_3'.length>0) document.getElementById('q54_322_3').click()">
+                
+
+                <input type="radio" name="q54_322" id="q54_322_3" value="3">
+                </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q54_322_4'.length>0) document.getElementById('q54_322_4').click()">
+                
+
+                <input type="radio" name="q54_322" id="q54_322_4" value="4">
+                </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q54_322_5'.length>0) document.getElementById('q54_322_5').click()">
+                
+
+                <input type="radio" name="q54_322" id="q54_322_5" value="5">
+                </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                يوجد بالمعامل الأجهزة والمعدات الحديثة&nbsp;
+                </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+                </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q54_323_1'.length>0) document.getElementById('q54_323_1').click()">
+                
+
+                <input type="radio" name="q54_323" id="q54_323_1" value="1">
+                </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q54_323_2'.length>0) document.getElementById('q54_323_2').click()">
+                
+
+                <input type="radio" name="q54_323" id="q54_323_2" value="2">
+                </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q54_323_3'.length>0) document.getElementById('q54_323_3').click()">
+                
+
+                <input type="radio" name="q54_323" id="q54_323_3" value="3">
+                </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q54_323_4'.length>0) document.getElementById('q54_323_4').click()">
+                
+
+                <input type="radio" name="q54_323" id="q54_323_4" value="4">
+                </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q54_323_5'.length>0) document.getElementById('q54_323_5').click()">
+                
+
+                <input type="radio" name="q54_323" id="q54_323_5" value="5">
+                </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                يتصف تصميم المعامل بالجاذبية والملاءمة&nbsp;
+                </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+                </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q54_324_1'.length>0) document.getElementById('q54_324_1').click()">
+                
+
+                <input type="radio" name="q54_324" id="q54_324_1" value="1">
+                </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q54_324_2'.length>0) document.getElementById('q54_324_2').click()">
+                
+
+                <input type="radio" name="q54_324" id="q54_324_2" value="2">
+                </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q54_324_3'.length>0) document.getElementById('q54_324_3').click()">
+                
+
+                <input type="radio" name="q54_324" id="q54_324_3" value="3">
+                </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q54_324_4'.length>0) document.getElementById('q54_324_4').click()">
+                
+
+                <input type="radio" name="q54_324" id="q54_324_4" value="4">
+                </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q54_324_5'.length>0) document.getElementById('q54_324_5').click()">
+                
+
+                <input type="radio" name="q54_324" id="q54_324_5" value="5">
+                </td>
+            </tr>
+            <tr class="raterow">
+              <td  class="p-2"style="text-align: left;">
+                تعتبر المساحة المتاحة للمعامل مناسبة لعدد الطلاب&nbsp;
+                </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+                </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q54_325_1'.length>0) document.getElementById('q54_325_1').click()">
+                
+
+                <input type="radio" name="q54_325" id="q54_325_1" value="1">
+                </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q54_325_2'.length>0) document.getElementById('q54_325_2').click()">
+                
+
+                <input type="radio" name="q54_325" id="q54_325_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q54_325_3'.length>0) document.getElementById('q54_325_3').click()">
+                
+
+                <input type="radio" name="q54_325" id="q54_325_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q54_325_4'.length>0) document.getElementById('q54_325_4').click()">
+                
+
+                <input type="radio" name="q54_325" id="q54_325_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q54_325_5'.length>0) document.getElementById('q54_325_5').click()">
+                
+
+                <input type="radio" name="q54_325" id="q54_325_5" value="5">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- End HTML generated from question_rate template. -->
+                </div>
+            </div>
+            </div>
+          </div>
+          <!-- المدرجات وقاعات التدريس -->
+          <div class="card m-4">
+            <div style="background-color:aliceblue;"class="card-header">
+              <legend >المدرجات وقاعات التدريس</legend>
+
+            </div>
+            <div class="card-body">
+              <div class="qn-content">
+                <div class="qn-answer">
+                    <!-- Begin HTML generated from question_rate template. -->
+        <table style="width:99.9%">
+          <tbody>
+            <tr>
+              <td style="width:59%"></td>
+              <td title="nya"></td>
+              <td style="width:8%; text-align:center;" class="smalltext">1</td>
+              <td style="width:8%; text-align:center;" class="smalltext">2</td>
+              <td style="width:8%; text-align:center;" class="smalltext">3</td>
+              <td style="width:8%; text-align:center;" class="smalltext">4</td>
+              <td style="width:8%; text-align:center;" class="smalltext">5</td>
+            </tr><tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                الموقــــــــــع&nbsp;
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+                </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q55_326_1'.length>0) document.getElementById('q55_326_1').click()">
+                
+
+                <input type="radio" name="q55_326" id="q55_326_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q55_326_2'.length>0) document.getElementById('q55_326_2').click()">
+                
+
+                <input type="radio" name="q55_326" id="q55_326_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q55_326_3'.length>0) document.getElementById('q55_326_3').click()">
+                
+
+                <input type="radio" name="q55_326" id="q55_326_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q55_326_4'.length>0) document.getElementById('q55_326_4').click()">
+                
+
+                <input type="radio" name="q55_326" id="q55_326_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q55_326_5'.length>0) document.getElementById('q55_326_5').click()">
+                
+
+                <input type="radio" name="q55_326" id="q55_326_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                الحجــــــــــم&nbsp;
+                
+                
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+                </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q55_327_1'.length>0) document.getElementById('q55_327_1').click()">
+                
+
+                <input type="radio" name="q55_327" id="q55_327_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q55_327_2'.length>0) document.getElementById('q55_327_2').click()">
+                
+
+                <input type="radio" name="q55_327" id="q55_327_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q55_327_3'.length>0) document.getElementById('q55_327_3').click()">
+                
+
+                <input type="radio" name="q55_327" id="q55_327_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q55_327_4'.length>0) document.getElementById('q55_327_4').click()">
+                
+
+                <input type="radio" name="q55_327" id="q55_327_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q55_327_5'.length>0) document.getElementById('q55_327_5').click()">
+                
+
+                <input type="radio" name="q55_327" id="q55_327_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                عدد المقاعد/ البنشات&nbsp;
+                
+                
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+                </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q55_328_1'.length>0) document.getElementById('q55_328_1').click()">
+                
+
+                <input type="radio" name="q55_328" id="q55_328_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q55_328_2'.length>0) document.getElementById('q55_328_2').click()">
+                
+
+                <input type="radio" name="q55_328" id="q55_328_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q55_328_3'.length>0) document.getElementById('q55_328_3').click()">
+                
+
+                <input type="radio" name="q55_328" id="q55_328_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q55_328_4'.length>0) document.getElementById('q55_328_4').click()">
+                
+
+                <input type="radio" name="q55_328" id="q55_328_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q55_328_5'.length>0) document.getElementById('q55_328_5').click()">
+                
+
+                <input type="radio" name="q55_328" id="q55_328_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                تسهيلات التدريس المتاحة (السبورة البيضاء، البروجكتور، داتاشو، ...)&nbsp;
+                
+                
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+                </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q55_329_1'.length>0) document.getElementById('q55_329_1').click()">
+                
+
+                <input type="radio" name="q55_329" id="q55_329_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q55_329_2'.length>0) document.getElementById('q55_329_2').click()">
+                
+
+                <input type="radio" name="q55_329" id="q55_329_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q55_329_3'.length>0) document.getElementById('q55_329_3').click()">
+                
+
+                <input type="radio" name="q55_329" id="q55_329_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q55_329_4'.length>0) document.getElementById('q55_329_4').click()">
+                
+
+                <input type="radio" name="q55_329" id="q55_329_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q55_329_5'.length>0) document.getElementById('q55_329_5').click()">
+                
+
+                <input type="radio" name="q55_329" id="q55_329_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                الهــــدوء&nbsp;
+                
+                
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+                </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q55_330_1'.length>0) document.getElementById('q55_330_1').click()">
+                
+
+                <input type="radio" name="q55_330" id="q55_330_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q55_330_2'.length>0) document.getElementById('q55_330_2').click()">
+                
+
+                <input type="radio" name="q55_330" id="q55_330_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q55_330_3'.length>0) document.getElementById('q55_330_3').click()">
+                
+
+                <input type="radio" name="q55_330" id="q55_330_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q55_330_4'.length>0) document.getElementById('q55_330_4').click()">
+                
+
+                <input type="radio" name="q55_330" id="q55_330_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q55_330_5'.length>0) document.getElementById('q55_330_5').click()">
+                
+
+                <input type="radio" name="q55_330" id="q55_330_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                الإضـــــاءة&nbsp;
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q55_331_1'.length>0) document.getElementById('q55_331_1').click()">
+                
+
+                <input type="radio" name="q55_331" id="q55_331_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q55_331_2'.length>0) document.getElementById('q55_331_2').click()">
+                
+
+                <input type="radio" name="q55_331" id="q55_331_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q55_331_3'.length>0) document.getElementById('q55_331_3').click()">
+                
+
+                <input type="radio" name="q55_331" id="q55_331_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q55_331_4'.length>0) document.getElementById('q55_331_4').click()">
+                
+
+                <input type="radio" name="q55_331" id="q55_331_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q55_331_5'.length>0) document.getElementById('q55_331_5').click()">
+                
+
+                <input type="radio" name="q55_331" id="q55_331_5" value="5">
+              </td>
+            </tr>
+            <tr class="raterow">
+              <td class="p-2" style="text-align: left;">
+                النظــــافة&nbsp;
+                
+                
+              </td>
+              <td style="width:1%;" class="notanswered" onclick="if(''.length>0) document.getElementById('').click()">
+                </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q55_332_1'.length>0) document.getElementById('q55_332_1').click()">
+                
+
+                <input type="radio" name="q55_332" id="q55_332_1" value="1">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q55_332_2'.length>0) document.getElementById('q55_332_2').click()">
+                
+
+                <input type="radio" name="q55_332" id="q55_332_2" value="2">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q55_332_3'.length>0) document.getElementById('q55_332_3').click()">
+                
+
+                <input type="radio" name="q55_332" id="q55_332_3" value="3">
+              </td>
+              <td style="text-align:center" class="c1 raterow" onclick="if('q55_332_4'.length>0) document.getElementById('q55_332_4').click()">
+                
+
+                <input type="radio" name="q55_332" id="q55_332_4" value="4">
+              </td>
+              <td style="text-align:center" class="c0 raterow" onclick="if('q55_332_5'.length>0) document.getElementById('q55_332_5').click()">
+                
+
+                <input type="radio" name="q55_332" id="q55_332_5" value="5">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- End HTML generated from question_rate template. -->
+                </div>
+            </div>
+            </div>
+          </div>
+          <br>
+          <div class="buttons">
+            <input name="submittype" type="hidden" value="Submit Survey"> <input name="submit" type="submit" class="btn btn-primary" value="Submit questionnaire"> 
+        </div>
+            </section>
+  
+           
+          
+            <!-- partial -->
+          </div>
+         
+         
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer text-center">
+          <div>
+            <span class="text-muted  d-block ">Al Azhar University </span>
+            <span class=" d-block mt-1 mt-sm-0">Faculty of Engineering, Department of Systems and Computers</span>
+       
+          </div> 
+        </footer> 
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>   
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="D:\Graduation_Project\vendors\js\vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="D:\Graduation_Project\vendors\chart.js\Chart.min.js"></script>
+  <script src="D:\Graduation_Project\vendors\datatables.net\jquery.dataTables.js"></script>
+  <script src="D:\Graduation_Project\vendors\datatables.net-bs4\dataTables.bootstrap4.js"></script>
+  <script src="D:\Graduation_Project\js\dataTables.select.min.js"></script>
+
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="D:\Graduation_Project\js\off-canvas.js"></script>
+  <script src="D:\Graduation_Project\js\hoverable-collapse.js"></script>
+  <script src="D:\Graduation_Project\js\template.js"></script>
+  <script src="D:\Graduation_Project\js\settings.js"></script>
+  <script src="D:\Graduation_Project\js\todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="D:\Graduation_Project\js\dashboard.js"></script>
+  <script src="D:\Graduation_Project\js\Chart.roundedBarCharts.js"></script>
+
+  <!-- End custom js for this page-->
+</body>
+
+</html>
+
