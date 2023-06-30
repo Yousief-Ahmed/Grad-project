@@ -9,7 +9,7 @@ var p=1;
 var q=1;
 
  // counter to track number of divs
-$("#btn1").click(function () {
+$("#butn1").click(function () {
     if (i < 4) { // check if three divs have been created
 
         // create a div and use index for id
@@ -24,14 +24,14 @@ $("#btn1").click(function () {
             var $i = $("<input />", {
                 type: "text",
                 id: "i" + n,
-                placeholder:'منسق مساعد'
+                placeholder:++j
             });
 
             // append the input to the div
             $d.append($i);
         }
         // append the div to the wrapper
-        $('#wrap1').append($d);
+        $('#wrapp1').append($d);
 
         // increment the index for div creation
         i++;
@@ -40,7 +40,7 @@ $("#btn1").click(function () {
 }
 
 );
-$("#btn2").click(function () {
+$("#butn2").click(function () {
     if (i < 4) { // check if three divs have been created
  
         // create a div and use index for id
@@ -56,14 +56,14 @@ $("#btn2").click(function () {
             var $i = $("<input />", {
                 type: "text",
                 id: "i" + n,
-                placeholder:++j
+                placeholder:++k
             });
  
             // append the input to the div
             $d.append($i);
         }
         // append the div to the wrapper
-        $('#wrap2').append($d);
+        $('#wrapp2').append($d);
  
         // increment the index for div creation
         i++;
