@@ -56,7 +56,7 @@ $("#btn2").click(function () {
             var $i = $("<input />", {
                 type: "text",
                 id: "i" + n,
-                placeholder:++j
+                placeholder:++o
             });
  
             // append the input to the div
