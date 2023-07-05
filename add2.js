@@ -1,7 +1,7 @@
 var i = 1;
 var a=1;
 var b=1;
-var c=1;
+var z=1;
 var e=1;
 var f=1;
 var p=1;
@@ -72,7 +72,7 @@ $("#butn2").click(function () {
  
 );
 
-$("#btn3").click(function () {
+$("#butn4").click(function () {
     if (i < 4) { // check if three divs have been created
  
         // create a div and use index for id
@@ -88,14 +88,14 @@ $("#btn3").click(function () {
             var $i = $("<input />", {
                 type: "text",
                 id: "i" + n,
-                placeholder:++c
+                placeholder:++z
             });
  
             // append the input to the div
             $d.append($i);
         }
         // append the div to the wrapper
-        $('#wrap3').append($d);
+        $('#wrapp4').append($d);
  
         // increment the index for div creation
         i++;

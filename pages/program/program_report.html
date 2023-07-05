@@ -326,289 +326,31 @@
            <div class="main-panel">
               
           <section>
-            <div>
-                <h2 
-                class="text-center  fs-4 ">
-                <input class="col-md-2  " type="number" class="form-control" id="program_year" value="" required>
-                نموذج توصيف برنامج دراسي عام 
-                    
-                </h2>
-                
-                 
-            </div>
+           
            
             
             <form id="program_specs" style="direction: rtl;" action="#!">
+                <h2 class="mb-4 text-center">التقرير السنوي لآداء البرنامج</h2>
                 <!-- start step indicators -->
                 <div class="form-header d-flex mb-4" style="direction: ltr;">
-                    <span class="stepIndicator">معلومات اساسية</span>
-                    <span class="stepIndicator">معلومات متخصصة</span>
-                    <span class="stepIndicator">معلومات متخصصة</span>
-                    <span class="stepIndicator">معلومات متخصصة</span>
-                    <span class="stepIndicator">معلومات متخصصة</span>
-                    <span class="stepIndicator">معلومات متخصصة</span>
-                    <span class="stepIndicator">معلومات متخصصة</span>
-                    <span class="stepIndicator">معلومات متخصصة</span>
-                    <span class="stepIndicator">معلومات متخصصة</span>
-                    <span class="stepIndicator">معلومات متخصصة</span>
+                    <span class="stepIndicator">مجالات القوة</span>
+                    <span class="stepIndicator">مجالات الضعف</span>
                 </div>
                 <!-- end step indicators -->
             
                 <!-- step one -->
-                 <div class="step">
-                    <h2 class="text-center mb-4">معلومات أساسية</h2>
-                    <div class="mb-3">
-                        <input type="text" placeholder="اسم البرنامج" oninput="this.className = ''" name="">
-                    </div>
-                    
-                    <div >
-                    <h3 class="text-right">طبيعة البرنامج</h3>
-                    
-                    <label class="checkbox-inline"> 
-                     <input type="checkbox" id="inlineCheckbox1" value="option1"> احادي
-                   </label>
-                   
-                   <label class="checkbox-inline">
-                     <input type="checkbox" id="inlineCheckbox2" value="option2">ثنائي
-                   </label>
-                   
-                   <label class="checkbox-inline">
-                     <input type="checkbox" id="inlineCheckbox3" value="option3">مشترك
-                   </label>
-                  
-                    </div>
-                    
-                    <div class="mb-3">
-                        <input type="text" placeholder="الفسم المسئول عن البرنامج" oninput="this.className = ''" name="">
-                    </div>
-                    <div class="mb-3">
-                      <input type="date" placeholder="تاريخ اقرار البرنامج" oninput="this.className = ''" name="">
-                  </div>
-                  <div class="mb-3">
-                    <input type="text" placeholder="منسق البرنامج" oninput="this.className = ''" name="">
-                </div>
-                <div class="mb-3">
-                  <input type="text" placeholder="منسق مساعد" oninput="this.className = ''" name="">
-                  <input type="button" id="btn1" value="Add" style="width: 80px; float: right;"/>
-                  <div id="wrap1"></div>
-              </div>
-              
-              <div class="mb-3">
-                <input type="text" placeholder="المراجع الداخلي" oninput="this.className = ''" name="">
-            </div>
-            <div class="mb-3">
-              <input type="text" placeholder="المراجع الخارجي" oninput="this.className = ''" name="">
-          </div>
-          <div class="mb-3">
-            <input type="date" placeholder="تاريخ اعتماد البرنامج" oninput="this.className = ''" name="">
-        </div> 
-    
-                </div>
-             
-                <!-- step two -->
                 <div class="step">
-                    <h2 class="text-center mb-4">الأهداف العامة من البرنامج</h2>
+                    <h3 class="text-right mb-4"> مجالات القوة (تقرير المراجعين المعتمدين)</h3>
                     <div class="mb-3">
-                      <input type="text" placeholder="1" oninput="this.className = ''" name="">
-                      <input type="button" id="btn2" value="Add" style="width: 80px; float: right;height: 45px;"/>
-                      <div id="wrap2"></div>
-                     </div>
-                  </div>
-                  
-                 
-               
-            
-                <!-- step three -->
-                <div class="step">
-                    <h3 class="text-center mb-4">المعايير الأكاديمية للبرنامج</h3>
-                    <h4 class="text-right mb-4">بنهاية هذا البرنامج يكون الخريج قادرََا على</h4>
-
-                    <div class="mb-3">
-                      <h4 style="float: right;">المعرفة والفهم</h4>
-                      <input type="text" placeholder="1" oninput="this.className = ''" name="">
-                      <input type="button" id="btn3" value="Add" style="width: 80px; float: right;"/>
-                      <div id="wrap3"></div>
-                  </div>
-                  <br>
-                  <br>
-                  <div class="mb-3">
-                    <h4 style="float: right;">القدرات الذهنية</h4>
-                    <input type="text" placeholder="1" oninput="this.className = ''" name="">
-                    <input type="button" id="btn4" value="Add" style="width: 80px; float: right;"/>
-                    <div id="wrap4"></div>
-                </div>
-                <br><br>
-                <div class="mb-3">
-                  <h4 style="float: right;">المهارات المهنية والعملية</h4>
-                  <input type="text" placeholder="1" oninput="this.className = ''" name="">
-                  <input type="button" id="btn5" value="Add" style="width: 80px; float: right;"/>
-                  <div id="wrap5"></div>
-              </div>
-              <br><br>
-
-                <div class="mb-3">
-                  <h4 style="float: right;">المهارات العامة</h4>
-                  <input type="text" placeholder="1" oninput="this.className = ''" name="">
-                  <input type="button" id="btn6" value="Add" style="width: 80px; float: right;"/>
-                  <div id="wrap6"></div>
-              </div>
-              <br><br>
-
-              <div class="mb-3">
-                  <h4 style="float: right;">المعايير الأكاديمية المرجعية للبرنامج</h4>
-                  <input type="text" placeholder="1" oninput="this.className = ''" name="">
-                  <input type="button" id="btn7" value="Add" style="width: 80px; float: right;"/>
-                  <div id="wrap7"></div>
-              </div>
-              <br><br>
-
-              <div class="mb-3">
-                <h4 style="float: right;">العلامات المرجعية</h4>
-                <input type="text" placeholder="1" oninput="this.className = ''" name="">
-                <input type="button" id="btn8" value="Add" style="width: 80px; float: right;"/>
-                <div id="wrap8"></div>
-            </div>
-            
-
-                </div>
-
-                <!-- step four -->
-                <div class="step">
-                  <h3 class="text-center mb-4">هيكل ومكونات البرنامج</h3>
-
-                  <div class="mb-3">
-                    <h4 class="text-right ">مدة البرنامج</h3>
-                  <label style="width: 150px;" class="checkbox pl-3"> 
-                    <input type="number" placeholder="عدد السنوات" id="" value="">
-                  </label>
-                  <label style="width: 150px;"class="checkbox pl-3"> 
-                    <input type="number" placeholder="عدد الفصول" id="" value=""> 
-                  </label>
-                </div>
-                  <br><br><br>
-
-                  <h3 class="text-right pb-3" style="font-weight: bold;">هيكل البرنامج</h3>
-
-                <div class="mb-3">
-                  <h4 class="text-right ">عدد الساعات/عدد الوحدات</h4>
-                  
-                <label style="width: 150px;" class="checkbox pl-3"> 
-                  <input type="number" placeholder="نظري" id="" value="">
-                </label>
-                <label style="width: 150px;" class="checkbox pl-3"> 
-                  <input type="number" placeholder="عملي" id="" value=""> 
-                </label>
-                <label style="width: 150px;" class="checkbox pl-3"> 
-                  <input type="number" placeholder="اجمالي" id="" value="">
-                </label>
-                <br><br><br>
-                <label style="width: 150px;" class="checkbox pl-3"> 
-                  <input type="number" placeholder="الزامي" id="" value="">
-                </label>
-                <label style="width: 150px;" class="checkbox pl-3"> 
-                  <input type="number" placeholder="انتقالي" id="" value="">
-                </label>
-                <label style="width: 150px;" class="checkbox pl-3"> 
-                  <input type="number" placeholder="اختياري" id="" value="">
-                </label>
-              </div>
-              <br><br><br>
-              <div class="mb-3">
-                <h4 class="text-right ">مقررات العلوم الأساسية</h3>
-              <label style="width: 150px;" class="checkbox pl-3"> 
-                <input type="number" placeholder="عدد" id="" value="">
-              </label>
-              <label style="width: 150px;"class="checkbox pl-3"> 
-                <input type="number" placeholder="%" id="" value=""> 
-              </label>
-                </div>
-
-                <br><br><br>
-              <div class="mb-3">
-                <h4 class="text-right ">مقررات العلوم الاجتماعية والانسانية</h3>
-              <label style="width: 150px;" class="checkbox pl-3"> 
-                <input type="number" placeholder="عدد" id="" value="">
-              </label>
-              <label style="width: 150px;"class="checkbox pl-3"> 
-                <input type="number" placeholder="%" id="" value=""> 
-              </label>
-            </div>
-
-            <br><br><br>
-              <div class="mb-3">
-                <h4 class="text-right ">مقررات علوم التخصص</h3>
-              <label style="width: 150px;" class="checkbox pl-3"> 
-                <input type="number" placeholder="عدد" id="" value="">
-              </label>
-              <label style="width: 150px;"class="checkbox pl-3"> 
-                <input type="number" placeholder="%" id="" value=""> 
-              </label>
-            </div>
-
-            <br><br><br>
-              <div class="mb-3">
-                <h4 class="text-right ">مقررات من علوم أخرى </h3>
-              <label style="width: 150px;" class="checkbox pl-3"> 
-                <input type="number" placeholder="عدد" id="" value="">
-              </label>
-              <label style="width: 150px;"class="checkbox pl-3 "> 
-                <input type="number" placeholder="%" id="" value=""> 
-              </label>
-            </div>
-            <br><br><br>
-              </div>
-                
-                <!-- step five -->
-                <div class="step">
-                  <h3 class="text-center">مقررات البرنامج</h3>
-                  <div class="mb-3">
-                    <h4 class="text-right">إلزامي</h4>
-                    <table class="tableM" data-toggle="table" style="width: 1200px;">
-                      <thead>
-                        <tr>
-                          <th class="text-center">الفرقة</th>
-                          <th class="text-center">الفصل الدراسي</th>
-                          <th class="text-center">كود المقرر</th>
-                          <th class="text-center">اسم المقرر</th>
-                          <th class="text-center">عدد الساعات نظري</th>
-                          <th class="text-center">عدد الساعات تطبيقي</th>
-                          <th class="text-center">المجموع</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td> <input type="text"  id="" value=""> </td>
-                          <td> <input type="text"  id="" value=""> </td>
-                          <td> <input type="text"  id="" value=""> </td>
-                          <td><input type="text"   id="" value=""> </td>
-                          <td> <input type="number" id="" value=""> </td>
-                          <td> <input type="number"  id="" value=""> </td>
-                          <td><input type="number" id="" value=""> </td>
-                        </tr>
-                       
-                      </tbody>
-                      
-                    </table>
-                    <button id="newbtn">Add</button>
-                    
-                  </div>
-                </div>
-
-                  <!-- step six -->
-                  <div class="step">
-                    <h3 class="text-center">مقررات البرنامج</h3>
-                    <div class="mb-3">
-                      <h4 class="text-right">اختياري</h4>
-                      <table class="tableO" data-toggle="table" style="width: 1200px;">
+                      <table class="tableM" data-toggle="table" style="width: 1200px;">
                         <thead>
                           <tr>
-                            <th class="text-center">الفرقة</th>
-                            <th class="text-center">الفصل الدراسي</th>
-                            <th class="text-center">كود المقرر</th>
-                            <th class="text-center">اسم المقرر</th>
-                            <th class="text-center">عدد الساعات نظري</th>
-                            <th class="text-center">عدد الساعات تطبيقي</th>
-                            <th class="text-center">المجموع</th>
+                            <th class="text-center">أنشطة ومهام التعزيز لمجالات القوة</th>
+                            <th class="text-center">أنضطة ومهام المعالجة والتحسين لنقاط الضعف</th>
+                            <th class="text-center">آليات التنفيذ</th>
+                            <th class="text-center">التوقيت</th>
+                            <th class="text-center">مسئولية التنفيذ</th>
+                            <th class="text-center">مؤشرات المتايعة وتقييم الاداء</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -616,10 +358,10 @@
                             <td> <input type="text"  id="" value=""> </td>
                             <td> <input type="text"  id="" value=""> </td>
                             <td> <input type="text"  id="" value=""> </td>
+                            <td><input type="date"   id="" value=""> </td>
                             <td><input type="text"   id="" value=""> </td>
-                            <td> <input type="number" id="" value=""> </td>
-                            <td> <input type="number"  id="" value=""> </td>
-                            <td><input type="number" id="" value=""> </td>
+                            <td><input type="text"   id="" value=""> </td>
+                            
                           </tr>
                          
                         </tbody>
@@ -629,88 +371,45 @@
                       
                     </div>
                   </div>
-              
-                  <!-- step seven -->
+             
+                <!-- step two -->
                 <div class="step">
-                    <h2 class="text-center mb-4">متطلبات الالتحاق بالبرنامج</h2>
+                    <h3 class="text-right mb-4"> مجالات الضعف (تقرير المراجعين المعتمدين)</h3>
                     <div class="mb-3">
-                      <input type="text" placeholder="1" oninput="this.className = ''" name="">
-                      <input type="button" id="butn1" value="Add" style="width: 80px; float: right;height: 45px;"/>
-                      <div id="wrapp1"></div>
-                     </div>
-                  </div>
-                  
-                   <!-- step eight -->
-                  <div class="step ">
-                    <h2 class="text-center mb-4">القواعد المنظمة لاستكمال البرنامج</h2>
-                    <div class="mb-3">
-                      <textarea  style="width: 720px; " id="autoresizing"></textarea>
-                     
-                     </div>
-                    
-                  </div>
-
-                  <!-- step nine -->
-                  <div class="step">
-                    <h3 class="text-center">طرق وقواعد تقييم الملتحقين بالبرنامج</h3>
-                    <div class="mb-3">
-                      
-                      <table class="tableF" data-toggle="table" style="width: 720px;">
+                      <table class="tableM" data-toggle="table" style="width: 1200px;">
                         <thead>
                           <tr>
-                            <th class="text-center col-md-3">الطريقة</th>
-                            <th class="text-center">ما تقيسه من المخرجات التعليمية</th>
+                            <th class="text-center">أنشطة ومهام التعزيز لمجالات القوة</th>
+                            <th class="text-center">أنضطة ومهام المعالجة والتحسين لنقاط الضعف</th>
+                            <th class="text-center">آليات التنفيذ</th>
+                            <th class="text-center">التوقيت</th>
+                            <th class="text-center">مسئولية التنفيذ</th>
+                            <th class="text-center">مؤشرات المتايعة وتقييم الاداء</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td> <input type="text"  id="" value=""> </td>
+                            <td> <input type="text"  id="" value=""> </td>
+                            <td> <input type="text"  id="" value=""> </td>
+                            <td><input type="date"   id="" value=""> </td>
+                            <td><input type="text"   id="" value=""> </td>
+                            <td><input type="text"   id="" value=""> </td>
                             
                           </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="text-center col-md-3"><textarea id="autoresizing"ْ style="height: 50px;"></textarea>
-                            </td>
-                            <td class="text-center col-md-12"><textarea id="autoresizing"ْ style="height: 50px; width: 460px;"></textarea>
-                            </td>
-                        
-                          </tr>
                          
                         </tbody>
                         
                       </table>
-                      <button id="">Add</button>
+                      <button id="newbtn">Add</button>
                       
                     </div>
-                  </div>  
+                  </div>
                   
-                  
-                   <!-- step ten -->
-                   <div class="step">
-                    <h3 class="text-center">طرق تقويم البرنامج</h3>
-                    <div class="mb-3">
-                      
-                      <table class="tableF" data-toggle="table" style="width: 720px;">
-                        <thead>
-                          <tr>
-                            <th class="text-center ">القائم بالتقويم</th>
-                            <th class="text-center col-md-6 ">الوسيلة</th>
-                            <th class="text-center ">العينة</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="text-center col-md-3"><textarea id="autoresizing"ْ style="height: 50px; width: 150px;"></textarea>
-                            </td>
-                            <td class="text-center col-md-3"><textarea id="autoresizing"ْ style="height: 50px;width: 250px; "></textarea>
-                            </td>
-                            <td class="text-center col-md-3"><textarea id="autoresizing"ْ style="height: 50px;"></textarea>
-                            </td>
-                          </tr>
-                         
-                        </tbody>
-                        
-                      </table>
-                      <button id="">Add</button>
-                      
-                    </div>
-                  </div>  
+                 
+               
+            
+                 
                   <!-- start previous / next buttons -->
                 <div class="form-footer d-flex">
                     <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>

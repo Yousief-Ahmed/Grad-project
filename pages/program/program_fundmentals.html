@@ -2,6 +2,20 @@
 <html lang="en">
 
 <head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.22.0/dist/bootstrap-table.min.css">
+
+    <script src="../../jquery-3.7.0.js">
+    </script>  
+    <script src="../../jquery-3.7.0.min.js">
+    </script>  
+    <script src="../../css/multi-step.css"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<!-- google font -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -32,6 +46,7 @@
     <!-- endinject -->
     <link rel="shortcut icon" href="D:\Graduation_Project\images\logo.jpg" />
     <script src="https://kit.fontawesome.com/8604f86d81.js" crossorigin="anonymous"></script>
+    
   </head>
 <body>
   <div class="container-scroller">
@@ -281,85 +296,87 @@
       </nav>
 
       <!-- partial -->
-     
-      <div class="main-panel d-flex">
-        <section class="bg-light py-5 py-xl-8">
-          <div class="container overflow-hidden ">
-            <div class="gy-md-0 ">
-              <div class="text-md-start ">
-                <div class=" row  ">
-                  <!-- البيانات الوصفية للبرنامج -->
-                  <div class="col-sm-6 mb-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">البيانات الوصفية للبرنامج</h5>
-                        <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing
-                          elit. Labore, dolore voluptatum! Sunt error dicta  quidem!</p>
-                        <a href="D:\Graduation_Project\pages\program\program_desc.html" class="btn btn-primary">Details</a>
-                      </div>
-                    </div>
-                  </div>
-
-                    <!-- رؤية ورسالة البرنامج -->
-                    <div class="col-sm-6 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">الرؤية والرسالة</h5>
-                          <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Labore, dolore voluptatum! Sunt error dicta  quidem!</p>
-                          <a href="D:\Graduation_Project\pages\program\program_fundmentals.html" class="btn btn-primary">Details</a>
-                        </div>
-                      </div>
-                    </div>
-
-                  <!-- توصيف البرنامج -->
-                  <div class="col-sm-6 mb-3">
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <!-- Welcome Message -->
+          <!-- header -->
+          <section class="bg-light py-5 py-xl-5">
+            <header class="pl-5 pr-5 pt-0 pb-0">
+              <div class="d-flex justify-content-between">
+              <h5>Al-Azhar University</h5>
+              <h5>جـامعـــة الأزهــــر</h5>
+             </div>
+            </header>
+            <header class="pl-5 pr-5 pt-0 pb-0">
+                <div class="d-flex justify-content-between">
+                <h5>Faculty of Engineering (boys)</h5>
+                <h5>كليـــــة الهندســـــة (بنين)</h5>
+               </div>
+              </header>
+              <header class="pl-5 pr-5 pt-0 pb-0">
+                <div class="d-flex justify-content-between">
+                <h5>Systems and Computer Engineering</h5>
+                <h5>قسم هندسة النظم والحاسبات</h5>
+               </div>
+              </header>
+              <hr size="7" width="90%" color="black">
+            
+          </section>
+         
+           <div class="main-panel">
+              
+          <section>
+           
+           
+            
+            <form id="program_specs" style="direction: rtl;" action="#!">
+                <h2 class="mb-4 text-center">رؤية ورسالة البرنامج</h2>
+                <!-- start step indicators -->
+                <div class="form-header d-flex mb-4" style="direction: ltr;">
+                    <span class="stepIndicator">الرؤية</span>
+                    <span class="stepIndicator">الرسالة</span>
+                </div>
+                <!-- end step indicators -->
+            
+                <!-- step one -->
+                <div class="step ">
+                    <h3 class="text-right mb-4"> الرؤية</h3>
+                    <div class="mb-3">
+                      <textarea  style="width: 720px; " id="autoresizing"></textarea>
+                     
+                     </div>
                     
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">توصيف البرنامج</h5>
-                        <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing
-                          elit. Labore, dolore voluptatum! Sunt error dicta  quidem!</p>
-                        <a href="D:\Graduation_Project\pages\program\program_specs.html" class="btn btn-primary">Details</a>
-                      </div>
+                  </div>
+             
+                <!-- step two -->
+                <div class="step">
+                    <h3 class="text-right mb-4"> الرسالة</h3>
+                    <div class="mb-3">
+                        <input type="text" placeholder="1" oninput="this.className = ''" name="">
+                        <input type="button" id="butn4" value="Add" style="width: 80px; float: right;"/>
+                        <div id="wrapp4"></div>
                     </div>
                    
                   </div>
-                   <!-- التقرير السنوي لآداء البرنامج -->
-                  <div class="col-sm-6 mb-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">التقرير السنوي لآداء البرنامج</h5>
-                        <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing
-                          elit. Labore, dolore voluptatum! Sunt error dicta  quidem!</p>
-                        <a href="D:\Graduation_Project\pages\program\program_report.html" class="btn btn-primary">Details</a>
-                      </div>
-                    </div>
                   
-                  </div>
-                    <!-- الخطة التنفيذية لتطوير وتعزيز البرنامج التعليمي  -->
-                  <div class="col-sm-6 mb-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">الخطة التنفيذية لتطوير وتعزيز البرنامج التعليمي</h5>
-                        <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing
-                          elit. Labore, dolore voluptatum! Sunt error dicta  quidem!</p>
-                        <a href="D:\Graduation_Project\pages\program\program_plan.html" class="btn btn-primary">Details</a>
-                      </div>
-                    </div>
-                  </div>
-                  
-               </div>
+                 
                
-              </div>
-            </div>
+            
+                 
+                  <!-- start previous / next buttons -->
+                <div class="form-footer d-flex">
+                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                </div>
+                <!-- end previous / next buttons -->
+            </form>
+          </section>
+           
+  
+           
+            
+            <!-- partial -->
           </div>
-        </section>
-
-       
-        
-        <!-- partial -->
-      
          
          
         <!-- content-wrapper ends -->
@@ -370,6 +387,7 @@
             <span class=" d-block mt-1 mt-sm-0">Faculty of Engineering, Department of Systems and Computers</span>
        
           </div> 
+          
         </footer> 
         <!-- partial -->
       </div>
@@ -379,6 +397,9 @@
   </div>
   <!-- container-scroller -->
 
+  <script>
+    
+  </script>
   <!-- plugins:js -->
   <script src="../../vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
@@ -401,6 +422,26 @@
   <script src="../../js/Chart.roundedBarCharts.js"></script>
   
   <!-- End custom js for this page-->
+  <script src="../../jquery-3.7.0.js">
+</script>  
+<script src="../../jquery-3.7.0.min.js">
+</script>  
+<script src="../../css/multi-step.css"></script>
+<script src="D:\Graduation_Project\step.js"></script>
+<script src="D:\Graduation_Project\add1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.22.0/dist/bootstrap-table.min.js"></script>
+    <script src="D:\Graduation_Project\addrowjs"></script>
+    <script src="D:\Graduation_Project\add2.js"></script>
+    <script type="text/javascript">
+        $('#autoresizing').on('input', function () {
+            this.style.height = 'auto';
+ 
+            this.style.height =
+                (this.scrollHeight) + 'px';
+        });
+    </script>
 </body>
 
 </html>
