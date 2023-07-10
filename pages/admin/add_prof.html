@@ -312,21 +312,17 @@
                   <label style="float: left;" for="email">Email</label>
                 <input class="form-control" type="email" id="email" required>
                 </div>
-                <div class="my-4">
-                  <label style="float: left;" for="course">Course</label>
-                <input class="form-control" type="course" id="course" required>
+
                 
-                </div>
                 
             
                <div class="my-4">
-                <label style="float: left;" for="studyLevel">Year</label>
-                <select class="form-control" id="studyLevel" required>
-                  <option value="">Select study level</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
+                <label style="float: left;" for="profType">Internal reviewer</label>
+                <select class="form-control" id="profType" required>
+                  <option value=""></option>
+                  <option value="1">Yes</option>
+                  <option value="2">No</option>
+                 
                 </select>
                </div>
 
@@ -335,22 +331,6 @@
                 <button class="btn btn-primary border-0 mb-3" type="submit" >Add</button>
               </form>
             </div>
-             <div style="background-color: rgb(255, 255, 255);" class="mt-3 shadow rounded mb-4 p-3">
-              <h3>Professor List</h3>
-              <table class="table table-striped" id="professorTable">
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Code</th>
-                    <th>Email</th>
-                    <th>course</th>
-                    <th>Study Level</th>
-                    <th>Actions</th>
-                  </tr>
-                </thead>
-                <tbody id="professorTableBody"></tbody>
-              </table>
-             </div>
             
             <footer class="footer text-center">
               <div>

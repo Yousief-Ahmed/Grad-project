@@ -11,7 +11,7 @@
   />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  <title>Add Course</title>
+  <title>Add bussinessmen</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="D:\Graduation_Project\vendors\feather\feather.css" />
   <link rel="stylesheet" href="D:\Graduation_Project\vendors\ti-icons\css\themify-icons.css" />
@@ -290,146 +290,75 @@
             </ul>
           </nav>
         <!-- partial -->
-
-        
-        <div class="main-panel mx-2 p-4 bg-light">
-            <div
-              data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom"
-              data-aos-duration="2500"
-              style="background-color: rgb(255, 255, 255)"
-              class="shadow rounded mt-5 mb-5 p-3"
-            >
-            
-            <h1>Add Course</h1>
-
-              <form class=" py-2 course-form"  style="direction: rtl;" >
+        <div class="main-panel mt-3 mx-2 p-4 bg-light">
+          <div data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="2500"
+           style="background-color: rgb(255, 255, 255);" class="user-form shadow rounded mb-4 p-3">
+    
+            <h3>Add bussinessmen</h3>
+  
+            <form  id="graduateForm"  style="direction: rtl;">
 
                 <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="nameInput">اسم المقرر</label>
-                    <input
+                    <div class="form-group col-md-6">
+                        <label for="name">اسم صاحب العمل</label>
+                        <input class="form-control" type="text" id="name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="companyName">اسم المؤسسة</label>
+                        <input class="form-control" type="text" id="companyName" required>
+                    </div>
+                </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="field">مجال المؤسسة</label>
+                        <input class="form-control" type="text" id="field" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label  for="address">عنوان المؤسسة</label>
+                          <input class="form-control" type="text" id="address" required>
+                    </div>  
+                  </div>
+
+                  <div class="form-row">
                     
-                      type="text"
-                      class="form-control"
-                      placeholder=""
-                      id="nameInput"
-                      required
-                    />
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="codeInput">كود المقرر</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="codeInput"
-                      placeholder=""
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label  for="profIdInput">Professor Id</label>
-                    <input
-                    
-                      type="text"
-                      class="form-control"
-                      placeholder=""
-                      id="profIdInput"
-                      required
-                    />
-                  </div>
-                  <div class="form-group col-md-3">
-                    <label for="practicalHoursInput">عدد الساعات العملية</label>
-                    <input
-                      type="number"
-                      class="form-control"
-                      id="practicalHoursInput"
-                      placeholder=""
-                      required
-                    />
-                  </div>
-                  <div class="form-group col-md-3">
-                    <label for="classHoursInput">عدد الساعات النظرية</label>
-                    <input
-                      type="number"
-                      class="form-control"
-                      id="classHoursInput"
-                      placeholder=""
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="descriptionInput">وصف المقرر</label>
-                  <textarea
-                    id="descriptionInput"
-                    class="form-control"
-                    placeholder="discription"
-                    required
-                  >
-                  </textarea>
-                </div>
-  
-                <div class="form-row" >
-                   
-                    <div class="form-group col-md-4">
-                      <label for="studyLevelInput">السنة الدراسية</label>
-                      <select id="studyLevelInput" class="form-control" required>
-                        <option>choose...</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        
-                      </select>
+                    <div class="form-group col-md-6">
+                        <label  for="phone">رقم التواصل</label>
+              <input class="form-control" type="number" id="phone" required>
                     </div>
-                    <div class="form-group col-md-2">
-                      <label for="semesterInput">الفصل الدراسي</label>
-                      <select id="semesterInput" class="form-control" required>
-                        <option>choose...</option>
-                        <option>1</option>
-                        <option>2</option>
-                        
-                      </select>
-                    </div>
-                    <div class="form-group col-md-2">
-                      <label for="typeInput">نوع المادة</label >
-                      <select id="typeInput" class="form-control" required>
-                        <option>choose...</option>
-                        <option>الزامي</option>
-                        <option>اختياري</option>
-                      </select>
+                    <div class="form-group col-md-6">
+                        <label  for="email">البريد الالكتروني</label>
+              <input class="form-control" type="email" id="email" required>
                     </div>
                   </div>
-  
-                <button id="submit-course" class="btn btn-primary">Save</button>
-              </form>
-            </div>
-
-
-           
-            <footer class="footer text-center">
-              <div>
-                <span class="text-muted d-block">Al Azhar University </span>
-                <span class="d-block mt-1 mt-sm-0"
-                  >Faculty of Engineering, Department of Systems and
-                  Computers</span
-                >
-              </div>
-            </footer>
-            <!-- partial -->
-            <!-- main-panel ends -->
+          
+          
+              <button class="btn btn-primary border-0 mb-3" type="submit" >Add</button>
+            </form>
           </div>
+
+          
+          <footer class="footer text-center">
+            <div>
+              <span class="text-muted d-block">Al Azhar University </span>
+              <span class="d-block mt-1 mt-sm-0"
+                >Faculty of Engineering, Department of Systems and
+                Computers</span
+              >
+            </div>
+          </footer>
+          <!-- partial -->
+        <!-- main-panel ends -->
+      </div>
       <!-- page-body-wrapper ends -->
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-    <script src="add_Course.js"></script>
+    <script src="add_student.js"></script>
     <!-- container-scroller -->
     <!-- plugins:js -->
     <script src="../../vendors/js/vendor.bundle.base.js"></script>
@@ -450,7 +379,5 @@
     <script src="../../js/typeahead.js"></script>
     <script src="../../js/select2.js"></script>
     <!-- End custom js for this page-->
-    <!-- End custom js for this page-->
-    <script src="D:\Graduation_Project\add3.js"></script>
   </body>
 </html>

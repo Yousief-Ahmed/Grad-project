@@ -81,46 +81,7 @@
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
                 <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
-                <!-- <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-success">
-                      <i class="ti-info-alt mx-0"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <h6 class="preview-subject font-weight-normal">Application Error</h6>
-                    <p class="font-weight-light small-text mb-0 text-muted">
-                      Just now
-                    </p>
-                  </div>
-                </a>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-warning">
-                      <i class="ti-settings mx-0"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <h6 class="preview-subject font-weight-normal">Settings</h6>
-                    <p class="font-weight-light small-text mb-0 text-muted">
-                      Private message
-                    </p>
-                  </div>
-                </a>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-info">
-                      <i class="ti-user mx-0"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <h6 class="preview-subject font-weight-normal">New user registration</h6>
-                    <p class="font-weight-light small-text mb-0 text-muted">
-                      2 days ago
-                    </p>
-                  </div>
-                </a> -->
-            </div>
+                </div>
             </li>
             <li class="nav-item nav-profile dropdown">
               <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
@@ -174,36 +135,19 @@
             </a>
             </li>
           
+           
             <li class="nav-item">
-              <a
-                class="nav-link"
-                data-toggle="collapse"
-                href="#Professors"
-                aria-expanded="false"
-                aria-controls="Professors"
-              >
+              <a class="nav-link"  href="D:\Graduation_Project\pages\Professors\prof.html" >
                 <i class="icon-layout menu-icon"></i>
                 <span class="menu-title pt-2">Professors</span>
-                <i class="menu-arrow"></i>
               </a>
-              <div class="collapse" id="Professors">
-                <ul class="nav flex-column sub-menu">
-                  
-                  <li class="nav-item">
-                    <a class="nav-link" href="D:\Graduation_Project\pages\Professors\prof.html">
-                      
-                      <span class="menu-title ">Abdelfattah</span>
-                    </a>
-                  </li>
-                 
-                </ul>
-              </div>
+              
             </li>
-            
+  
             <li class="nav-item">
-              <a class="nav-link"  href="D:\Graduation_Project\pages\Professor\course\course.html" >
+              <a class="nav-link"  href="D:\Graduation_Project\pages\Professors\prof_details.html" >
                 <i class="icon-layout menu-icon"></i>
-                <span class=" pt-2">Courses</span>
+                <span class="menu-title pt-2">Courses</span>
               </a>
               
             </li>
@@ -211,7 +155,7 @@
             <li class="nav-item">
               <a class="nav-link"  href="#resources" >
                 <i class="icon-layout menu-icon"></i>
-                <span class=" pt-2">Resources</span>
+                <span class="menu-title pt-2">Resources</span>
               </a>
             </li>
             
@@ -290,6 +234,13 @@
                 <span class="menu-title pt-2">Program reports</span>
               </a>
             </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="D:\Graduation_Project\pages\admin\admin.html">
+                <i class="icon-grid menu-icon"></i>
+                <span class="menu-title pt-2">Admin</span>
+              </a>
+            </li>
           
           </ul>
         </nav>
@@ -304,13 +255,14 @@
                   <table  class="table table-bordered " style="direction: rtl;">
                    <th class="text-center">اسم الطالب</th>
                    <th class="text-center">الرقم القومي</th>
+                   <th class="text-center">رقم التواصل</th>
+                   <th class="text-center">الايميل الالكتروني</th>
                    <th class="text-center">القسم</th>
                    <th class="text-center">الشعبة</th>
                    <th class="text-center">الفرقة</th>
                    <th class="text-center">الحالة</th>
-                   <th class="text-center">رقم التواصل</th>
-                   <th class="text-center">الايميل الالكتروني</th>
-                   <th class="text-center">العنوان</th>
+                   
+                   
                     <tbody>
                       
                     </tbody>
@@ -318,7 +270,7 @@
                         <td>
                             <form class="needs-validation" novalidate>
                               <div class="">
-                                <input type="text" class="form-control" id="" placeholder="اسم الطالب" value="" required>
+                                <input type="text" class="form-control" id="" placeholder="" value="" required>
                                 
                               </div>
                             </form>
@@ -326,7 +278,7 @@
                           <td>
                             <form class="needs-validation" novalidate>
                               <div class="">
-                                <input type="text" class="form-control" id="" placeholder="الرقم القومي" value="" required>
+                                <input type="number" class="form-control" id="" placeholder="" value="" required>
                                 
                               </div>
                             </form>
@@ -334,7 +286,7 @@
                           <td>
                             <form class="needs-validation" novalidate>
                               <div class="">
-                                <input type="text" class="form-control" id="" placeholder=" القسم" value="" required>
+                                <input type="number" class="form-control" id="" placeholder="" value="" >
                                 
                               </div>
                             </form>
@@ -342,7 +294,16 @@
                           <td>
                             <form class="needs-validation" novalidate>
                               <div class="">
-                                <input type="text" class="form-control" id="" placeholder="الشعبة" value="" >
+                                <input type="email" class="form-control" id="" placeholder="" value="" >
+                                
+                              </div>
+                            </form>
+                          </td>
+                         
+                          <td>
+                            <form class="needs-validation" novalidate>
+                              <div class="">
+                                <input type="text" class="form-control" id="" placeholder="" value="" required>
                                 
                               </div>
                             </form>
@@ -350,7 +311,7 @@
                           <td>
                             <form class="needs-validation" novalidate>
                               <div class="">
-                                <input type="text" class="form-control" id="" placeholder=" الفرقة" value="" required>
+                                <input type="text" class="form-control" id="" placeholder="" value="" >
                                 
                               </div>
                             </form>
@@ -358,7 +319,7 @@
                           <td>
                             <form class="needs-validation" novalidate>
                               <div class="">
-                                <input type="text" class="form-control" id="" placeholder=" الحالة" value="" required>
+                                <input type="text" class="form-control" id="" placeholder="" value="" required>
                                 
                               </div>
                             </form>
@@ -366,27 +327,12 @@
                           <td>
                             <form class="needs-validation" novalidate>
                               <div class="">
-                                <input type="text" class="form-control" id="" placeholder=" رقم التواصل" value="" >
+                                <input type="text" class="form-control" id="" placeholder="" value="" required>
                                 
                               </div>
                             </form>
                           </td>
-                          <td>
-                            <form class="needs-validation" novalidate>
-                              <div class="">
-                                <input type="text" class="form-control" id="" placeholder=" الايميل الالكتروني" value="" >
-                                
-                              </div>
-                            </form>
-                          </td>
-                          <td>
-                            <form class="needs-validation" novalidate>
-                              <div class="">
-                                <input type="text" class="form-control" id="" placeholder="  العنوان" value="" >
-                                
-                              </div>
-                            </form>
-                          </td>
+                         
                     </tr>
                    
                     

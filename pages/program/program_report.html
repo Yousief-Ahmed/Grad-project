@@ -80,46 +80,7 @@
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
               <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
-              <!-- <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <div class="preview-icon bg-success">
-                    <i class="ti-info-alt mx-0"></i>
-                  </div>
-                </div>
-                <div class="preview-item-content">
-                  <h6 class="preview-subject font-weight-normal">Application Error</h6>
-                  <p class="font-weight-light small-text mb-0 text-muted">
-                    Just now
-                  </p>
-                </div>
-              </a>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <div class="preview-icon bg-warning">
-                    <i class="ti-settings mx-0"></i>
-                  </div>
-                </div>
-                <div class="preview-item-content">
-                  <h6 class="preview-subject font-weight-normal">Settings</h6>
-                  <p class="font-weight-light small-text mb-0 text-muted">
-                    Private message
-                  </p>
-                </div>
-              </a>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <div class="preview-icon bg-info">
-                    <i class="ti-user mx-0"></i>
-                  </div>
-                </div>
-                <div class="preview-item-content">
-                  <h6 class="preview-subject font-weight-normal">New user registration</h6>
-                  <p class="font-weight-light small-text mb-0 text-muted">
-                    2 days ago
-                  </p>
-                </div>
-              </a> -->
-            </div>
+              </div>
           </li>
           <li class="nav-item nav-profile dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
@@ -175,36 +136,19 @@
           </a>
           </li>
         
+         
           <li class="nav-item">
-            <a
-              class="nav-link"
-              data-toggle="collapse"
-              href="#Professors"
-              aria-expanded="false"
-              aria-controls="Professors"
-            >
+            <a class="nav-link"  href="D:\Graduation_Project\pages\Professors\prof.html" >
               <i class="icon-layout menu-icon"></i>
               <span class="menu-title pt-2">Professors</span>
-              <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="Professors">
-              <ul class="nav flex-column sub-menu">
-                
-                <li class="nav-item">
-                  <a class="nav-link" href="D:\Graduation_Project\pages\Professors\prof.html">
-                    
-                    <span class="menu-title ">Abdelfattah</span>
-                  </a>
-                </li>
-               
-              </ul>
-            </div>
+            
           </li>
-          
+
           <li class="nav-item">
-            <a class="nav-link"  href="D:\Graduation_Project\pages\Professor\course\course.html" >
+            <a class="nav-link"  href="D:\Graduation_Project\pages\Professors\prof_details.html" >
               <i class="icon-layout menu-icon"></i>
-              <span class=" pt-2">Courses</span>
+              <span class="menu-title pt-2">Courses</span>
             </a>
             
           </li>
@@ -212,7 +156,7 @@
           <li class="nav-item">
             <a class="nav-link"  href="#resources" >
               <i class="icon-layout menu-icon"></i>
-              <span class=" pt-2">Resources</span>
+              <span class="menu-title pt-2">Resources</span>
             </a>
           </li>
           
@@ -291,6 +235,13 @@
               <span class="menu-title pt-2">Program reports</span>
             </a>
           </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="D:\Graduation_Project\pages\admin\admin.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title pt-2">Admin</span>
+            </a>
+          </li>
         
         </ul>
       </nav>
@@ -342,7 +293,7 @@
                 <div class="step">
                     <h3 class="text-right mb-4"> مجالات القوة (تقرير المراجعين المعتمدين)</h3>
                     <div class="mb-3">
-                      <table class="tableM" data-toggle="table" style="width: 1200px;">
+                      <table id="tableS" class="tableM" data-toggle="table" style="width: 1200px;">
                         <thead>
                           <tr>
                             <th class="text-center">أنشطة ومهام التعزيز لمجالات القوة</th>
@@ -367,7 +318,8 @@
                         </tbody>
                         
                       </table>
-                      <button id="newbtn">Add</button>
+                      <button  onclick="addRowS()">Add Row</button>
+
                       
                     </div>
                   </div>
@@ -376,7 +328,7 @@
                 <div class="step">
                     <h3 class="text-right mb-4"> مجالات الضعف (تقرير المراجعين المعتمدين)</h3>
                     <div class="mb-3">
-                      <table class="tableM" data-toggle="table" style="width: 1200px;">
+                      <table id="tableW" class="tableM" data-toggle="table" style="width: 1200px;">
                         <thead>
                           <tr>
                             <th class="text-center">أنشطة ومهام التعزيز لمجالات القوة</th>
@@ -401,7 +353,7 @@
                         </tbody>
                         
                       </table>
-                      <button id="newbtn">Add</button>
+                      <button  onclick="addRowW()">Add Row</button>
                       
                     </div>
                   </div>
@@ -489,6 +441,61 @@
                 (this.scrollHeight) + 'px';
         });
     </script>
+
+<script>
+  function addRowS() {
+    // Get the table
+    var table = document.getElementById("tableS");
+
+    // Create a new row
+    var newRow = table.insertRow();
+
+    // Insert cells into the new row
+    var Cell1 = newRow.insertCell();
+    var Cell2 = newRow.insertCell();
+    var Cell3 = newRow.insertCell();
+    var Cell4 = newRow.insertCell();
+    var Cell5 = newRow.insertCell();
+    var Cell6 = newRow.insertCell();
+
+    // Add content to the cells
+    Cell1.innerHTML = `<input type="text"  id="" value="">`;
+    Cell2.innerHTML = `<input type="text"  id="" value="">`;
+    Cell3.innerHTML = `<input type="text"  id="" value="">`;
+    Cell4.innerHTML = `<input type="date"   id="" value="">`;
+    Cell5.innerHTML = `<input type="text"  id="" value="">`;
+    Cell6.innerHTML = `<input type="text"  id="" value="">`;
+
+  }
+</script>
+
+<script>
+  function addRowW() {
+    // Get the table
+    var table = document.getElementById("tableW");
+
+    // Create a new row
+    var newRow = table.insertRow();
+
+    // Insert cells into the new row
+    var Cell7 = newRow.insertCell();
+    var Cell8 = newRow.insertCell();
+    var Cell9 = newRow.insertCell();
+    var Cell10 = newRow.insertCell();
+    var Cell11 = newRow.insertCell();
+    var Cell12 = newRow.insertCell();
+
+    // Add content to the cells
+    Cell7.innerHTML = `<input type="text"  id="" value="">`;
+    Cell8.innerHTML = `<input type="text"  id="" value="">`;
+    Cell9.innerHTML = `<input type="text"  id="" value="">`;
+    Cell10.innerHTML = `<input type="date"   id="" value="">`;
+    Cell11.innerHTML = `<input type="text"  id="" value="">`;
+    Cell12.innerHTML = `<input type="text"  id="" value="">`;
+
+  }
+</script>
+
 </body>
 
 </html>

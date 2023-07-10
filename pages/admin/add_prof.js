@@ -5,7 +5,7 @@ function saveProfessor(event) {
     var name = document.getElementById('name').value;
     var code = document.getElementById('code').value;
     var email = document.getElementById('email').value;
-    var studyLevel = document.getElementById('studyLevel').value;
+    var profType = document.getElementById('profType').value;
     var course = document.getElementById('course').value;
   
     // Create professor object
@@ -14,7 +14,7 @@ function saveProfessor(event) {
       code: code,
       email: email,
       course: course,
-      studyLevel: studyLevel
+      profType: profType
     };
   
     // Check if local storage is available
@@ -32,7 +32,7 @@ function saveProfessor(event) {
       document.getElementById('name').value = '';
       document.getElementById('code').value = '';
       document.getElementById('email').value = '';
-      document.getElementById('studyLevel').value = '';
+      document.getElementById('profType').value = '';
       document.getElementById('course').value = '';
   
       // Refresh the professor table
@@ -61,7 +61,7 @@ function saveProfessor(event) {
                         '<td>' + professor.code + '</td>' +
                         '<td>' + professor.email + '</td>' +
                         '<td>' + professor.course + '</td>' +
-                        '<td>' + professor.studyLevel + '</td>' +
+                        '<td>' + professor.profType + '</td>' +
                         '<td>' +
                           '<button class="badge bg-info text-white" onclick="editprofessor(' + i + ')">Edit</button> ' +
                           '<button class="badge bg-danger text-white" onclick="deleteprofessor(' + i + ')">Delete</button>' +
@@ -109,7 +109,7 @@ function saveProfessor(event) {
       document.getElementById('code').value = professor.code;
       document.getElementById('email').value = professor.email;
       document.getElementById('course').value = professor.course;
-      document.getElementById('studyLevel').value = professor.studyLevel;
+      document.getElementById('profType').value = professor.profType;
   
       // Delete the professor from the array
       professors.splice(index, 1);
