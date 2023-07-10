@@ -320,13 +320,27 @@
                 <label style="float: left;" for="profType">Internal reviewer</label>
                 <select class="form-control" id="profType" required>
                   <option value=""></option>
-                  <option value="1">Yes</option>
-                  <option value="2">No</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
                  
                 </select>
                </div>
 
-               
+               <div style="background-color: rgb(255, 255, 255);" class="mt-3 shadow rounded mb-4 p-3">
+                <h3>Professor List</h3>
+                <table class="table table-striped" id="professorTable">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Code</th>
+                      <th>Email</th>
+                      <th>Internal reviewer</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="professorTableBody"></tbody>
+                </table>
+               </div>
             
                 <button class="btn btn-primary border-0 mb-3" type="submit" >Add</button>
               </form>

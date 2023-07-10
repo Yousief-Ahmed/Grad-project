@@ -290,8 +290,6 @@
           <!-- Welcome Message -->
           <!-- header -->
         
-           <div class="main-panel">
-              
           <section>
            
            
@@ -339,38 +337,35 @@
                 <!-- end step indicators -->
             
                 <!-- step one -->
+
                 <div class="step">
-                   
-                    <div class="container-fluid">
-                      <table class="tableM" data-toggle="table" style="width: 1200px;">
-                        <thead>
-                          <tr class="d-flex">
-                            <th class="text-center col-2">Q-No.</th>
+                 
+                  <div class="mb-3">
+                    <table id="tableEx" class="tableM" data-toggle="table" style="width: 1200px;">
+                      <thead>
+                        <tr>
+                          <th class="text-center col-2">Q-No.</th>
                             <th class="text-center col-8">LOS</th>
                             <th class="text-center col-2">Marks</th>
-                            
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr class="d-flex">
-                            <td class="col-2"> <input type="number"  id="" value=""> </td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="col-2"> <input type="number"  id="" value=""> </td>
                             <td class="col-8">  <textarea  style="width: 750px; height: 50px; " id="autoresizing"></textarea> </td>
                             <td class="col-2"> <input type="number"  id="" value=""> </td>
                             
-                          </tr>
-                         
-                        </tbody>
-                        
-                      </table>
-                      <button id="newbtn">Add</button>
+                          
+                        </tr>
+                       
+                      </tbody>
                       
-                    </div>
+                    </table>
+                    <button  onclick="addRowQ()">Add Row</button>
+                    
                   </div>
-             
-                
-                  
-                 
-               
+                </div>
+
             
                  
                   <!-- start previous / next buttons -->
@@ -383,15 +378,7 @@
           </section>
            
   
-           
-            
-            <!-- partial -->
-          </div>
-         
-         
-        <!-- content-wrapper ends -->
-        <!-- partial:partials/_footer.html -->
-        <footer class="footer text-center">
+            <footer class="footer text-center">
           <div>
             <span class="text-muted  d-block ">Al Azhar University </span>
             <span class=" d-block mt-1 mt-sm-0">Faculty of Engineering, Department of Systems and Computers</span>
@@ -399,6 +386,11 @@
           </div> 
           
         </footer> 
+         
+         
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+       
         <!-- partial -->
       </div>
       <!-- main-panel ends -->
@@ -444,14 +436,54 @@
     <script src="https://unpkg.com/bootstrap-table@1.22.0/dist/bootstrap-table.min.js"></script>
     <script src="D:\Graduation_Project\addrowjs"></script>
     <script src="D:\Graduation_Project\add2.js"></script>
-    <script type="text/javascript">
-        $('#autoresizing').on('input', function () {
-            this.style.height = 'auto';
- 
-            this.style.height =
-                (this.scrollHeight) + 'px';
-        });
+    <script>
+      function addRowQ() {
+        // Get the table
+        var table = document.getElementById("tableEx");
+    
+        // Create a new row
+        var newRow = table.insertRow();
+    
+        // Insert cells into the new row
+        var qNo = newRow.insertCell();
+        var lOs = newRow.insertCell();
+        var marks = newRow.insertCell();
+        
+    
+        // Add content to the cells
+        qNo.innerHTML = `<input type="number"  id="" value="">`;
+        lOs.innerHTML = `<textarea  style="width: 750px; height: 50px; " id="autoresizing"></textarea>`;
+        marks.innerHTML = `<input type="number"  id="" value="">`;
+        
+      }
     </script>
+
+<!-- <script>
+  function addRowW() {
+    // Get the table
+    var table = document.getElementById("tablew");
+
+    // Create a new row
+    var newRow = table.insertRow();
+
+    // Insert cells into the new row
+    
+    var qNo = newRow.insertCell();
+    var lOs = newRow.insertCell();
+    var marks = newRow.insertCell();
+    
+    
+
+    // Add content to the cells
+    
+    qNo.innerHTML = `<input type="number"  id="" value="">`;
+    lOs.innerHTML = ` <textarea  style="width: 750px; height: 50px; " id="autoresizing"></textarea>`;
+    marks.innerHTML = `<input type="number"  id="" value="">`;
+    
+    
+
+  }
+</script> -->
 </body>
 
 </html>

@@ -30663,6 +30663,7 @@ body{
 }
 #program_specs .form-header .stepIndicator:last-child:after {
   display: none;
+  
 }
 #program_specs input {
   padding: 15px 20px;

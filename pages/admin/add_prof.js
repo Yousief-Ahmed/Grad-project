@@ -6,14 +6,12 @@ function saveProfessor(event) {
     var code = document.getElementById('code').value;
     var email = document.getElementById('email').value;
     var profType = document.getElementById('profType').value;
-    var course = document.getElementById('course').value;
-  
+   
     // Create professor object
     var professor = {
       name: name,
       code: code,
       email: email,
-      course: course,
       profType: profType
     };
   
@@ -33,8 +31,7 @@ function saveProfessor(event) {
       document.getElementById('code').value = '';
       document.getElementById('email').value = '';
       document.getElementById('profType').value = '';
-      document.getElementById('course').value = '';
-  
+     
       // Refresh the professor table
       displayProfessor();
     } else {
@@ -60,7 +57,7 @@ function saveProfessor(event) {
         row.innerHTML = '<td>' + professor.name + '</td>' +
                         '<td>' + professor.code + '</td>' +
                         '<td>' + professor.email + '</td>' +
-                        '<td>' + professor.course + '</td>' +
+                        
                         '<td>' + professor.profType + '</td>' +
                         '<td>' +
                           '<button class="badge bg-info text-white" onclick="editprofessor(' + i + ')">Edit</button> ' +
@@ -108,7 +105,6 @@ function saveProfessor(event) {
       document.getElementById('name').value = professor.name;
       document.getElementById('code').value = professor.code;
       document.getElementById('email').value = professor.email;
-      document.getElementById('course').value = professor.course;
       document.getElementById('profType').value = professor.profType;
   
       // Delete the professor from the array

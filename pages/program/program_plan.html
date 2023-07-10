@@ -327,7 +327,7 @@
                 <div class="step">
                    
                     <div class="mb-3">
-                      <table class="tableM" data-toggle="table" style="width: 1200px;">
+                      <table id="tableP" class="tableP" data-toggle="table" style="width: 1200px;">
                         <thead>
                           <tr>
                             <th class="text-center">مجالات التطوير والتعزير</th>
@@ -352,7 +352,8 @@
                         </tbody>
                         
                       </table>
-                      <button id="newbtn">Add</button>
+                      <button  onclick="addRowP()">Add Row</button>
+
                       
                     </div>
                   </div>
@@ -438,6 +439,34 @@
                 (this.scrollHeight) + 'px';
         });
     </script>
+
+<script>
+  function addRowP() {
+    // Get the table
+    var table = document.getElementById("tableP");
+
+    // Create a new row
+    var newRow = table.insertRow();
+
+    // Insert cells into the new row
+    var Cell1 = newRow.insertCell();
+    var Cell2 = newRow.insertCell();
+    var Cell3 = newRow.insertCell();
+    var Cell4 = newRow.insertCell();
+    var Cell5 = newRow.insertCell();
+    var Cell6 = newRow.insertCell();
+
+    // Add content to the cells
+    Cell1.innerHTML = `<input type="text"  id="" value="">`;
+    Cell2.innerHTML = `<input type="text"  id="" value="">`;
+    Cell3.innerHTML = `<input type="text"  id="" value="">`;
+    Cell4.innerHTML = `<input type="date"   id="" value="">`;
+    Cell5.innerHTML = `<input type="text"  id="" value="">`;
+    Cell6.innerHTML = `<input type="text"  id="" value="">`;
+    
+  }
+</script>
+
 </body>
 
 </html>

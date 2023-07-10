@@ -44,6 +44,7 @@ var currentTab = 0; // Current tab is set to be the first tab (0)
           var x, y, i, valid = true;
           x = document.getElementsByClassName("step");
           y = x[currentTab].getElementsByTagName("input");
+          z = x[currentTab].getElementsByTagName("textarea");
           // A loop that checks every input field in the current tab:
           for (i = 0; i < y.length; i++) {
             // If a field is empty...

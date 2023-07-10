@@ -551,7 +551,7 @@
                   <h3 class="text-center">مقررات البرنامج</h3>
                   <div class="mb-3">
                     <h4 class="text-right">إلزامي</h4>
-                    <table class="tableM" data-toggle="table" style="width: 1200px;">
+                    <table id="tableM" class="tableM" data-toggle="table" style="width: 1200px;">
                       <thead>
                         <tr>
                           <th class="text-center">الفرقة</th>
@@ -577,7 +577,8 @@
                       </tbody>
                       
                     </table>
-                    <button id="newbtn">Add</button>
+                    <button  onclick="addRowM()">Add Row</button>
+
                     
                   </div>
                 </div>
@@ -587,7 +588,7 @@
                     <h3 class="text-center">مقررات البرنامج</h3>
                     <div class="mb-3">
                       <h4 class="text-right">اختياري</h4>
-                      <table class="tableO" data-toggle="table" style="width: 1200px;">
+                      <table id="tableO" class="tableO" data-toggle="table" style="width: 1200px;">
                         <thead>
                           <tr>
                             <th class="text-center">الفرقة</th>
@@ -613,7 +614,8 @@
                         </tbody>
                         
                       </table>
-                      <button id="newbtn">Add</button>
+                      <button  onclick="addRowO()">Add Row</button>
+
                       
                     </div>
                   </div>
@@ -643,7 +645,7 @@
                     <h3 class="text-center">طرق وقواعد تقييم الملتحقين بالبرنامج</h3>
                     <div class="mb-3">
                       
-                      <table class="tableF" data-toggle="table" style="width: 720px;">
+                      <table id="tableR" class="tableR" data-toggle="table" style="width: 720px;">
                         <thead>
                           <tr>
                             <th class="text-center col-md-3">الطريقة</th>
@@ -653,9 +655,9 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td class="text-center col-md-3"><textarea id="autoresizing"ْ style="height: 50px;"></textarea>
+                            <td class="text-center col-md-3"><textarea id="autoresizing"ْ style="height: 50px;" required></textarea>
                             </td>
-                            <td class="text-center col-md-12"><textarea id="autoresizing"ْ style="height: 50px; width: 460px;"></textarea>
+                            <td class="text-center col-md-12"><textarea id="autoresizing"ْ style="height: 50px; width: 460px;" required></textarea>
                             </td>
                         
                           </tr>
@@ -663,7 +665,8 @@
                         </tbody>
                         
                       </table>
-                      <button id="">Add</button>
+                      <button  onclick="addRowR()">Add Row</button>
+
                       
                     </div>
                   </div>  
@@ -674,7 +677,7 @@
                     <h3 class="text-center">طرق تقويم البرنامج</h3>
                     <div class="mb-3">
                       
-                      <table class="tableF" data-toggle="table" style="width: 720px;">
+                      <table id="tableF" class="tableF" data-toggle="table" style="width: 720px;">
                         <thead>
                           <tr>
                             <th class="text-center ">القائم بالتقويم</th>
@@ -684,18 +687,18 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td class="text-center col-md-3"><textarea id="autoresizing"ْ style="height: 50px; width: 150px;"></textarea>
+                            <td class="text-center col-md-3"><textarea id="autoresizing"ْ style="height: 50px; width: 150px;" required></textarea>
                             </td>
-                            <td class="text-center col-md-3"><textarea id="autoresizing"ْ style="height: 50px;width: 250px; "></textarea>
+                            <td class="text-center col-md-3"><textarea id="autoresizing"ْ style="height: 50px;width: 250px;" required></textarea>
                             </td>
-                            <td class="text-center col-md-3"><textarea id="autoresizing"ْ style="height: 50px;"></textarea>
+                            <td class="text-center col-md-3"><textarea id="autoresizing"ْ style="height: 50px;" required></textarea>
                             </td>
                           </tr>
                          
                         </tbody>
                         
                       </table>
-                      <button id="">Add</button>
+                      <button  onclick="addRowF()">Add Row</button>
                       
                     </div>
                   </div>  
@@ -769,6 +772,112 @@
                 (this.scrollHeight) + 'px';
         });
     </script>
+    
+<script>
+  function addRowM() {
+    // Get the table
+    var table = document.getElementById("tableM");
+
+    // Create a new row
+    var newRow = table.insertRow();
+
+    // Insert cells into the new row
+      var grade = newRow.insertCell();
+      var semester = newRow.insertCell();
+      var code = newRow.insertCell();
+      var name = newRow.insertCell();
+      var pHours = newRow.insertCell();
+      var cHours = newRow.insertCell();
+      var tHours = newRow.insertCell();
+
+      // Add content to the cells
+      grade.innerHTML = `<input type="text"  id="" value="">`;
+      semester.innerHTML = `<input type="text"  id="" value="">`;
+      code.innerHTML = `<input type="text"  id="" value="">`;
+      name.innerHTML = `<input type="text"   id="" value="">`;
+      pHours.innerHTML = `<input type="number"  id="" value="">`;
+      cHours.innerHTML = `<input type="number"  id="" value="">`;
+      tHours.innerHTML = `<input type="number"  id="" value="">`;
+
+
+  }
+</script>
+
+<script>
+  function addRowO() {
+    // Get the table
+    var table = document.getElementById("tableO");
+
+    // Create a new row
+    var newRow = table.insertRow();
+
+    // Insert cells into the new row
+      var grade = newRow.insertCell();
+      var semester = newRow.insertCell();
+      var code = newRow.insertCell();
+      var name = newRow.insertCell();
+      var pHours = newRow.insertCell();
+      var cHours = newRow.insertCell();
+      var tHours = newRow.insertCell();
+
+      // Add content to the cells
+      grade.innerHTML = `<input type="text"  id="" value="">`;
+      semester.innerHTML = `<input type="text"  id="" value="">`;
+      code.innerHTML = `<input type="text"  id="" value="">`;
+      name.innerHTML = `<input type="text"   id="" value="">`;
+      pHours.innerHTML = `<input type="number"  id="" value="">`;
+      cHours.innerHTML = `<input type="number"  id="" value="">`;
+      tHours.innerHTML = `<input type="number"  id="" value="">`;
+
+
+  }
+</script>
+
+<script>
+  function addRowR() {
+    // Get the table
+    var table = document.getElementById("tableR");
+
+    // Create a new row
+    var newRow = table.insertRow();
+
+    // Insert cells into the new row
+      var method = newRow.insertCell();
+      var output = newRow.insertCell();
+     
+
+      // Add content to the cells
+      method.innerHTML = `<textarea id="autoresizing"ْ style="height: 50px;" required></textarea>`;
+      output.innerHTML = `<textarea id="autoresizing"ْ style="height: 50px; width: 460px;" required></textarea>`;
+     
+
+
+  }
+</script>
+
+<script>
+  function addRowF() {
+    // Get the table
+    var table = document.getElementById("tableF");
+
+    // Create a new row
+    var newRow = table.insertRow();
+
+    // Insert cells into the new row
+    var person = newRow.insertCell();
+      var method = newRow.insertCell();
+      var output = newRow.insertCell();
+     
+
+      // Add content to the cells
+      person.innerHTML = `<textarea id="autoresizing"ْ style="height: 50px; width: 150px;" required></textarea>`;
+      method.innerHTML = `<textarea id="autoresizing"ْ style="height: 50px;width: 250px;" required></textarea>`;
+      output.innerHTML = `<textarea id="autoresizing"ْ style="height: 50px;" required></textarea>`;
+     
+
+
+  }
+</script>
 </body>
 
 </html>
